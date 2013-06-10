@@ -24,6 +24,7 @@ exclude_patterns = ['.build']
 extensions = [
     'sphinx.ext.intersphinx', 
     'sphinx.ext.todo',
+    'sphinxcontrib.programoutput',
 ]
 
 pygments_style = 'friendly'

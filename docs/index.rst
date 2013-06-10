@@ -30,12 +30,14 @@ Currently, only testing an OpenTripPlanner_ installation is supported.
 Running the static tests
 ------------------------
 
-The tests are located at :file:`tests/static-tests.json`. Use the :program:`test-otp` command to start the tests. The :option:`-u` option sets the OpenTripPlanner plan
-URL. For example::
+The tests are located at :file:`tests/static-tests.json`. Use the
+:program:`test-otp` command to start the tests.
+
+.. program-output:: test-otp --help
+
+For example::
 
     test-otp -u http://opentripplanner.nl/opentripplanner-api-webapp/ws/plan tests/static-tests.json output.json
-
-See also the output of :command:`test-otp --help`.
 
 .. _OpenTripPlanner: http://www.opentripplanner.org
 
@@ -84,7 +86,7 @@ A testcase defines the following properties:
     The destination location, using the the same format as ``from``.
 
 ``time``
-    The date and time of departure or arrival, in `ISO 8601`_ format, but without timezone informatien.
+    The date and time of departure or arrival.
 
 ``timeType``
     Whether the ``time`` property is a departure time (``D``) or arrival time (``A``).

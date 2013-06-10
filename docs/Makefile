@@ -3,7 +3,7 @@
 # You can set these variables from the command line.
 SPHINXOPTS    = -a
 SPHINXBUILD   = sphinx-build
-BUILDDIR      = ../build/docs
+BUILDDIR      = ../build/sphinx
 
 # Internal variables.
 ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(SPHINXOPTS) .
