@@ -4,6 +4,10 @@ Beter Benutten MMRI project
 
 This project contains code and data for the Beter Benutten MMRI project.
 
+See the `project source`_ at GitHub.
+
+.. _`project source`: https://github.com/goabout/mmri
+
 
 Setting up a development environment
 ====================================
