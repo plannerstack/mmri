@@ -10,8 +10,8 @@ PATH = os.path.dirname(os.path.abspath(__file__))
 
 # -- General configuration -----------------------------------------------------
 
-project = u'MMRI Test-set'
-copyright = u'2013, Go About and others'
+project = u'MMRI'
+copyright = u'2013, Beter Benutten MMRI consortia'
 
 version = 'current'  # major.minor
 release = 'current'  # full version
@@ -40,9 +40,9 @@ html_theme = 'goabout'
 html_theme_path = ['.themes']
 #html_theme_options = {}
 
-html_title = 'MMRI Test-set documentation'
+html_title = 'MMRI documentation'
 html_static_path = ['.static']
-html_logo = 'logo.png'
+html_logo = 'bblogo.jpg'
 html_favicon = 'favicon.ico'
 
 # If true, SmartyPants will be used to convert quotes and dashes to
