@@ -1,0 +1,194 @@
+[
+	{
+		"id": 1,
+		"from": {
+			"latitude": 51.93171172932908,
+			"longitude": 4.484078829788638,
+			"description": "Jensiusstraat, Rotterdam"
+		},
+		"to": {
+			"latitude": 52.31337761203373,
+			"longitude": 4.947208392733043,
+			"description": "Bijlmerdreef, Amsterdam"
+		},
+		"time": "2013-05-13T12:00:00",
+		"timeType": "D",
+		"comment": "Three possible train trips"
+	},
+	{
+		"id": 2,
+		"from": {
+			"latitude": 50.90163543215805,
+			"longitude": 5.8517506355830315,
+			"description": "Aalbeek"
+		},
+		"to": {
+			"latitude": 51.362233312466564,
+			"longitude": 4.086579083925454,
+			"description": "Baalhoek"
+		},
+		"time": "2013-05-13T12:00:00",
+		"timeType": "D",
+		"comment": "Too hard on OTP without precomputed stop"
+	},
+	{
+		"id": 3,
+		"from": {
+			"latitude": 51.64580247357085,
+			"longitude": 4.858801954214757,
+			"description": "Kanonnierstraat, Oosterhout"
+		},
+		"to": {
+			"latitude": 52.0881127608356,
+			"longitude": 5.113009511375861,
+			"description": "Laan van Puntenburg, Utrecht"
+		},
+		"time": "2013-05-13T12:00:00",
+		"timeType": "D",
+		"comment": "Taking the bus is faster than taking the train"
+	},
+	{
+		"id": 4,
+		"from": {
+			"latitude": 51.919776112183214,
+			"longitude": 4.525208290705168,
+			"description": "Burgemeester Oudlaan, Rotterdam"
+		},
+		"to": {
+			"latitude": 51.67809421650231,
+			"longitude": 5.330027610326467,
+			"description": "Brabantlaan 1, 's-Hertogenbosch"
+		},
+		"time": "2013-05-13T12:00:00",
+		"timeType": "D",
+		"comment": "Many different transit mode possibilities"
+	},
+	{
+		"id": 5,
+		"from": {
+			"latitude": 52.09202778150251,
+			"longitude": 4.408993766169693,
+			"description": "Rozenrust, Veursestraatweg 104, Leidschendam"
+		},
+		"to": {
+			"latitude": 50.85668456232952,
+			"longitude": 5.6643918685934445,
+			"description": "Gentelaan, Maastricht"
+		},
+		"time": "2013-05-13T12:00:00",
+		"timeType": "D",
+		"comment": "Planning drama :-)"
+	},
+	{
+		"id": 6,
+		"from": {
+			"latitude": 50.85668456232952,
+			"longitude": 5.6643918685934445,
+			"description": "Gentelaan, Maastricht"
+		},
+		"to": {
+			"latitude": 52.09202778150251,
+			"longitude": 4.408993766169693,
+			"description": "Rozenrust, Veursestraatweg 104, Leidschendam"
+		},
+		"time": "2013-05-13T12:00:00",
+		"timeType": "D",
+		"comment": "Will I get home tonight?"
+	},
+	{
+		"id": 7,
+		"from": {
+			"latitude": 52.09202778150251,
+			"longitude": 4.408993766169693,
+			"description": "Rozenrust, Veursestraatweg 104, Leidschendam"
+		},
+		"to": {
+			"latitude": 52.080276,
+			"longitude": 4.325,
+			"description": "Station Den Haag Centraal"
+		},
+		"time": "2013-05-13T12:00:00",
+		"timeType": "D",
+		"comment": ""
+	},
+	{
+		"id": 8,
+		"from": {
+			"latitude": 52.12611812943665,
+			"longitude": 6.23942596975613,
+			"description": "De Waterkant, Zutphen"
+		},
+		"to": {
+			"latitude": 51.98869010125479,
+			"longitude": 4.376178869525722,
+			"description": "Kluyverweg, Delft"
+		},
+		"time": "2013-05-13T12:00:00",
+		"timeType": "D",
+		"comment": "Many altervatives, including choice between train and bus between Rotterdam and Delft"
+	},
+	{
+		"id": 9,
+		"from": {
+			"latitude": 52.06972,
+			"longitude": 4.3225,
+			"description": "Station Den Haag HS"
+		},
+		"to": {
+			"latitude": 52.080276,
+			"longitude": 4.325,
+			"description": "Station Den Haag Centraal"
+		},
+		"time": "2013-05-13T12:00:00",
+		"timeType": "D",
+		"comment": "Tram is sometimes faster than train"
+	},
+	{
+		"id": 10,
+		"from": {
+			"latitude": 52.135277,
+			"longitude": 5.0336113,
+			"description": "Station Maarssen"
+		},
+		"to": {
+			"latitude": 52.293335,
+			"longitude": 4.7005553,
+			"description": "Stations Hoofddorp"
+		},
+		"time": "2013-05-13T12:00:00",
+		"timeType": "D",
+		"comment": "Multiple transfer options; high chance of delay."
+	},
+	{
+		"id": 11,
+		"from": {
+			"latitude": 52.08889,
+			"longitude": 5.1102777,
+			"description": "Station Utrecht Centraal"
+		},
+		"to": {
+			"latitude": 52.069486,
+			"longitude": 5.083408,
+			"description": "P+R Papendorp, Utrecht"
+		},
+		"time": "2013-05-13T12:00:00",
+		"timeType": "D",
+		"comment": "Multiple buslines"
+	},
+	{
+		"id": 12,
+		"from": {
+			"latitude": 52.09848846931021,
+			"longitude": 5.079098109360649,
+			"description": "Galjoenstraat, Utrecht"
+		},
+		"to": {
+			"latitude": 53.10014274960883,
+			"longitude": 4.76250951865836,
+			"description": "Boodtlaan, De Koog"
+		},
+		"time": "2013-05-13T12:00:00",
+		"timeType": "D",
+		"comment": "Many transit mode types (11)"
+	}
+]

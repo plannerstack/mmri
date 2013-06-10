@@ -1,0 +1,19 @@
+# Python
+.Python
+*.pyc
+*.pyo
+*.egg-info/
+
+# Distribute
+/build/
+/dist/
+/deb_dist/
+
+# Virtualenv
+/bin/
+/include/
+/lib/
+/local/
+
+# Sphinx
+/docs/.build/
