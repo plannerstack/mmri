@@ -190,5 +190,21 @@
 		"time": "2013-05-13T12:00:00",
 		"timeType": "D",
 		"comment": "Many transit mode types (11)"
+	},
+	{
+		"id": 13,
+		"from": {
+			"latitude": 51.9935827,
+			"longitude": 4.3872289,
+			"description": "Molengraaffsingel, Delft"
+		},
+		"to": {
+			"latitude": 52.2077532,
+			"longitude": 4.402618999999959,
+			"description": "Rijnmond, Katwijk"
+		},
+		"time": "2013-05-13T13:20:00",
+		"timeType": "A",
+		"comment": "While this doesn't return a trip (not safely accessible), this case between the same points on another day does, although a few hours too early: http://opentripplanner.nl/opentripplanner-api-webapp/ws/plan?arriveBy=true&date=06%2F13%2F2013&time=13%3A20&fromPlace=51.9935827%2C4.3872289&toPlace=52.2077532%2C4.402618999999959&mode=TRANSIT%2CWALK&optimize=QUICK&numItineraries=1&maxWalkDistance=2000"
 	}
 ]
