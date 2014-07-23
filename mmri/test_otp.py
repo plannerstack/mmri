@@ -47,6 +47,7 @@ def build_url(test, options):
         'date': time.strftime('%Y-%m-%d'),
         'time': time.strftime('%H:%M:%S'),
         'arriveBy': (test['timeType'] == 'A'),
+        'maxWalkDistance': 5000,
         'optimize': 'QUICK',
         'mode': 'WALK,TRANSIT',
         'walkSpeed': 1.389,
@@ -66,11 +67,13 @@ def parse_result(test, result):
 def parse_itinerary(test, result):
     itinerary = result['plan']['itineraries'][0]
     return {
-        'id': test['id'],   
+        'id': test['id'],
+        'OTPTotalComputationTime': result.get("debug", {}).get("totalTime"),
+        'OTPTimedout': result.get("debug", {}).get("timedOut"),
         'transfers': itinerary['transfers'],
         'departureTime': jsonDateTime(itinerary['startTime']),
         'arrivalTime': jsonDateTime(itinerary['endTime']),
-        'duration': itinerary['duration'] / 1000,  # milliseconds to seconds
+        'duration': itinerary['duration'] / 60,  # seconds to minutes
         'legs': [parse_leg(leg) for leg in itinerary['legs']],
     }
 
@@ -90,6 +93,8 @@ def parse_leg(leg):
 def parse_error(test, result):
     return {
         'id': test['id'],
+        'OTPTotalComputationTime': result.get("debug", {}).get("totalTime"),
+        'OTPTimedout': result.get("debug", {}).get("timedOut"),
         'error': result['error']['msg'],
     }
 
