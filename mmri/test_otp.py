@@ -12,9 +12,10 @@ import sys
 
 DEFAULT_URL = 'http://localhost:8080/opentripplanner-api-webapp/ws/plan'
 DATE_TIME_FORMAT = "%Y-%m-%dT%H:%M:%S"
-MAX_COMPUTATION_TIME = 3000
+MAX_COMPUTATION_TIME = 3000 # milliseconds
 TIMEOUT = 5000 # milliseconds
 
+# GLOBALS USED FOR KEEPING TRACK OF VALIDATION
 ERRORS_FOUND = 0
 HIGHEST_COMPUTATION_TIME = 0 # milliseconds
 
@@ -77,13 +78,10 @@ def build_url(test, options):
 
 
 def parse_result(test, result):
-    if not result:
+    if not result or result['error'] is not None:
         return parse_error(test, result)
-
-    if result['error'] is None:
-        return parse_itinerary(test, result)
     else:
-        return parse_error(test, result)
+        return parse_itinerary(test, result)
 
 
 def parse_itinerary(test, result):
