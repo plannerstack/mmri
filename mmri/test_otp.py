@@ -1,56 +1,146 @@
 #!/usr/bin/env python
 #
 # Test OpenTripPlanner
-
+import os
 import argparse
 from datetime import datetime
+import time
 import json
 import logging
 import requests
 import sys
 
-
+# DEFAULTS
 DEFAULT_URL = 'http://localhost:8080/opentripplanner-api-webapp/ws/plan'
 DATE_TIME_FORMAT = "%Y-%m-%dT%H:%M:%S"
-MAX_COMPUTATION_TIME = 3000 # milliseconds
 TIMEOUT = 5000 # milliseconds
 
-# GLOBALS USED FOR KEEPING TRACK OF VALIDATION
-ERRORS_FOUND = 0
-HIGHEST_COMPUTATION_TIME = 0 # milliseconds
+# GLOBAL USED FOR KEEPING TRACK OF VALIDATION
+VALIDATION = {}
 
 logger = logging.getLogger('test-otp')
 
+# CONFIG FOR GRAYLOG2
+GELFHOST = None #'54.89.119.236'
+GELFPORT = None # 49154
+
+if (GELFHOST and GELFPORT):
+    try:
+        # $ pip install gelfHandler
+        # From: https://github.com/stewrutledge/gelfHandler/
+        from gelfHandler import gelfHandler
+        gHandler = gelfHandler(host=GELFHOST,port=GELFPORT,proto='UDP')
+        logger.addHandler(gHandler)
+    except ImportError:
+        logger.warn("GelfHandler not importer, not logging to Gelf server")
+
 
 def test_otp(options):
-    infile  = open(options.input,  'r')    if options.input  != '-' else sys.stdin
-    outfile = open(options.output, 'w', 1) if options.output != '-' else sys.stdout
+    instream  = open(options.input,  'r')    if options.input  != '-' else sys.stdin
+    outstream = open(options.output, 'w', 1) if options.output != '-' else sys.stdout
 
-    tests = json.load(infile)
+    tests = json.load(instream)
+    before_all_tests(tests, options)
+
     for i, test in enumerate(tests):
-        outfile.write(',\n' if i > 0 else '[\n')
-        logger.info("Test %d: from %s (%f, %f) to %s (%f, %f)", test['id'],
-                test['from']['description'], test['from']['latitude'], test['from']['longitude'],
-                test['to']['description'], test['to']['latitude'], test['to']['longitude'])
-        url = build_url(test, options)
-        logger.debug("Calling URL: %s", url)
+        before_each_test(test, options, i) # adds test['url'] and test['test_identifier']
+
+        # OUT: start of array or seperator
+        outstream.write(',\n' if i > 0 else '[\n')
+
+        logger.info('RUNNING: %s on %s' % (test['test_identifier'], test['url']), extra={'gelfProps':{'test':test['test_identifier'], 'url': test['url']}})
+
         try:
-            response = requests.get(url, timeout=options.requesttimeout/1000) 
+            response = requests.get(test['url'], timeout=options.requesttimeout/1000) 
             resultjson = response.json()
         except requests.exceptions.RequestException as e:    # This is the correct syntax
-            logger.debug(e)
+            logger.error('REQUESTEXCEPTION: %s on %s' % (test['test_identifier'], test['url']), extra={'gelfProps':{'test':test['test_identifier'], 'url': test['url'], 'requestException': str(e)}})
             resultjson = {}
+
         result = parse_result(test, resultjson)
-        json.dump(result, outfile, indent=2, sort_keys=True)
-        if options.validate:
-            validate_result(result)
-    outfile.write('\n]\n')
 
-    if options.validate:
-        print_validation(options, outfile)
+        # OUT: actual result
+        json.dump(result, outstream, indent=2, sort_keys=True)
 
-    if infile  is not sys.stdin:  infile.close()
-    if outfile is not sys.stdout: outfile.close()
+        after_each_test(test, result, options, i)
+
+    after_all_tests(tests, options)
+
+    # OUT: end of array
+    outstream.write('\n]\n')
+
+    if instream  is not sys.stdin:  instream.close()
+    if outstream is not sys.stdout: outstream.close()
+
+
+def before_all_tests(tests, options):
+    VALIDATION['startTime'] = int(round(time.time() * 1000))
+    VALIDATION['errorsFound'] = 0
+    VALIDATION['highestTestDuration'] = 0
+
+    logger.info('BEFOREALLTESTS %s' % options.url,
+        extra={'gelfProps':{
+            'startTimestamp':       VALIDATION['startTime']
+        }})
+    
+def after_all_tests(tests, options):
+    VALIDATION['endTime'] = int(round(time.time() * 1000))
+    VALIDATION['totalTestDuration'] = (VALIDATION['endTime'] - VALIDATION['startTime'])
+    
+    logger.info('AFTERALLTESTS %s: %s' % (options.url, VALIDATION['totalTestDuration']),
+        extra={'gelfProps':{ 
+            'url':                  options.url,
+            'startTimestamp':       VALIDATION['startTime'],
+            'endTimestamp':         VALIDATION['endTime'],
+            'totalTestDuration':    VALIDATION['totalTestDuration'],
+            'errorsFound':          VALIDATION['errorsFound'],
+            'highestTestDuration':  VALIDATION['highestTestDuration']
+            }})
+
+    if options.output:
+        fileName, fileExtension = os.path.splitext(options.output)
+        validationOutputName = '%s_validation%s' % (fileName, fileExtension)
+        validationOutput = open(validationOutputName, 'w', 1)
+        json.dump(VALIDATION, validationOutput, indent=2, sort_keys=True)
+        validationOutput.close()
+
+
+
+def before_each_test(test, options, i):
+    # Extend test object with url and test_identifier
+    test['test_identifier'] = readable_test_identifier(test)
+    test['url'] = build_url(test, options)
+
+    VALIDATION[test['id']] = {
+        'id':               test['id'],
+        'startTime':        int(round(time.time() * 1000)),
+        'url':              test['url'],
+        'test_identifier':  test['test_identifier']
+    }
+
+
+def after_each_test(test, result, options, i):
+    VALIDATION[test['id']]['endTime'] = int(round(time.time() * 1000))
+    VALIDATION[test['id']]['testDuration'] = (VALIDATION[test['id']]['endTime'] - VALIDATION[test['id']]['startTime'])
+    VALIDATION[test['id']]['isError']  = result['isError']
+    VALIDATION[test['id']]['itineraryDuration'] = 0 if result['isError'] else result['duration']
+    VALIDATION[test['id']]['itineraryTransfers'] = 0 if result['isError'] else result['transfers']
+
+    if (VALIDATION[test['id']]['testDuration'] > VALIDATION['highestTestDuration']):
+        VALIDATION['highestTestDuration'] = VALIDATION[test['id']]['testDuration']
+    if (result['isError']):
+        VALIDATION['errorsFound'] += 1
+
+    logger.info('AFTERTEST %s' % test['id'],
+        extra={ 'gelfProps': VALIDATION[test['id']] })
+
+
+
+# UTILS
+def readable_test_identifier(test):
+    return "Test %s: from %s (%s, %s) to %s (%s, %s)" % (test['id'],
+    test['from']['description'], test['from']['latitude'], test['from']['longitude'],
+    test['to']['description'], test['to']['latitude'], test['to']['longitude'])
 
 
 def build_url(test, options):
@@ -125,35 +215,6 @@ def jsonDateTime(timestamp):
     time = datetime.fromtimestamp(timestamp / 1000)  # milliseconds to seconds
     return datetime.strftime(time, DATE_TIME_FORMAT)
 
-def validate_result(result):
-    global ERRORS_FOUND
-    global HIGHEST_COMPUTATION_TIME
-
-    OTPTotalComputationTime = result.get('OTPTotalComputationTime')
-    if result.get('isError'):
-        ERRORS_FOUND += 1
-    if not isinstance( OTPTotalComputationTime, ( int, long ) ):
-        ERRORS_FOUND += 1
-        logger.debug("validate_result:: No OTPTotalComputationTime found, validation can't succeed")
-        return
-    if (OTPTotalComputationTime > HIGHEST_COMPUTATION_TIME):
-        HIGHEST_COMPUTATION_TIME = OTPTotalComputationTime
-    return
-
-def print_validation(options, outfile):
-    global ERRORS_FOUND
-    global HIGHEST_COMPUTATION_TIME
-    successMessage = 'VALIDATION_SUCCESS'
-    errorMessage = 'VALIDATION_ERROR'
-    errorsFound = ERRORS_FOUND > 0
-    maxReached = HIGHEST_COMPUTATION_TIME > options.maxcomputationtime
-    message = successMessage
-    if (errorsFound or maxReached):
-        message = errorMessage
-    outfile.write(message)
-    logger.debug('%s - ERRORS_FOUND: %s, HIGHEST_COMPUTATION_TIME: %s', message, ERRORS_FOUND, HIGHEST_COMPUTATION_TIME)
-    return message
-
 # Command line handling
 
 def parse_args(args=None):
@@ -169,10 +230,6 @@ def parse_args(args=None):
             help='show debugging output')
     parser.add_argument('-t', '--today', action='store_true',
             help='overrule the dates given in the test data to be on today')
-    parser.add_argument('-v', '--validate', action='store_true',
-            help='validate the results. Outputs VALIDATION_SUCCESS at the end of the output if no errors were returned and all test had a OTPTotalComputationTime underneath maxcomputationtime, else VALIDATION_ERROR')
-    parser.add_argument('-m', '--maxcomputationtime', default=MAX_COMPUTATION_TIME, type=int,
-            help='the maxmimum time (in ms) that a request is allowed to have taken (default: ' + str(MAX_COMPUTATION_TIME) + ')')
     parser.add_argument('-r', '--requesttimeout', default=TIMEOUT, type=int,
             help='the maxmimum time (in ms) that a request is allowed to have taken (default: ' + str(TIMEOUT) + ')')
     return parser.parse_args(args)
