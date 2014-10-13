@@ -168,7 +168,7 @@ def build_url(test, options):
 
 
 def parse_result(test, result):
-    if not result or result['error'] is not None:
+    if not result or result.get('error') is not None:
         return parse_error(test, result)
     else:
         return parse_itinerary(test, result)
