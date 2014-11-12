@@ -1,0 +1,128 @@
+{
+  "1": {
+    "endTime": 1412786366346, 
+    "id": 1, 
+    "isError": false, 
+    "itineraryDuration": 76, 
+    "itineraryTransfers": 0, 
+    "startTime": 1412786365015, 
+    "testDuration": 1331, 
+    "test_identifier": "Test 1: from Jensiusstraat, Rotterdam (51.9317117293, 4.48407882979) to Bijlmerdreef, Amsterdam (52.313377612, 4.94720839273)", 
+    "url": "http://91.240.240.130:9050/otp/routers/default/plan?walkSpeed=1.389&date=2014-10-08&mode=WALK,TRANSIT&numItineraries=1&time=12:00:25&fromPlace=51.931712,4.484079&maxWalkDistance=5000&optimize=QUICK&arriveBy=False&toPlace=52.313378,4.947208"
+  }, 
+  "2": {
+    "endTime": 1412786371394, 
+    "id": 2, 
+    "isError": true, 
+    "itineraryDuration": 0, 
+    "itineraryTransfers": 0, 
+    "startTime": 1412786366347, 
+    "testDuration": 5047, 
+    "test_identifier": "Test 2: from Aalbeek (50.9016354322, 5.85175063558) to Baalhoek (51.3622333125, 4.08657908393)", 
+    "url": "http://91.240.240.130:9050/otp/routers/default/plan?walkSpeed=1.389&date=2014-10-08&mode=WALK,TRANSIT&numItineraries=1&time=12:00:26&fromPlace=50.901635,5.851751&maxWalkDistance=5000&optimize=QUICK&arriveBy=False&toPlace=51.362233,4.086579"
+  }, 
+  "3": {
+    "endTime": 1412786372531, 
+    "id": 3, 
+    "isError": false, 
+    "itineraryDuration": 90, 
+    "itineraryTransfers": 0, 
+    "startTime": 1412786371395, 
+    "testDuration": 1136, 
+    "test_identifier": "Test 3: from Kanonnierstraat, Oosterhout (51.6458024736, 4.85880195421) to Laan van Puntenburg, Utrecht (52.0881127608, 5.11300951138)", 
+    "url": "http://91.240.240.130:9050/otp/routers/default/plan?walkSpeed=1.389&date=2014-10-08&mode=WALK,TRANSIT&numItineraries=1&time=12:00:31&fromPlace=51.645802,4.858802&maxWalkDistance=5000&optimize=QUICK&arriveBy=False&toPlace=52.088113,5.113010"
+  }, 
+  "4": {
+    "endTime": 1412786376386, 
+    "id": 4, 
+    "isError": false, 
+    "itineraryDuration": 112, 
+    "itineraryTransfers": 3, 
+    "startTime": 1412786372532, 
+    "testDuration": 3854, 
+    "test_identifier": "Test 4: from Burgemeester Oudlaan, Rotterdam (51.9197761122, 4.52520829071) to Brabantlaan 1, 's-Hertogenbosch (51.6780942165, 5.33002761033)", 
+    "url": "http://91.240.240.130:9050/otp/routers/default/plan?walkSpeed=1.389&date=2014-10-08&mode=WALK,TRANSIT&numItineraries=1&time=12:00:32&fromPlace=51.919776,4.525208&maxWalkDistance=5000&optimize=QUICK&arriveBy=False&toPlace=51.678094,5.330028"
+  }, 
+  "5": {
+    "endTime": 1412786379944, 
+    "id": 5, 
+    "isError": false, 
+    "itineraryDuration": 227, 
+    "itineraryTransfers": 3, 
+    "startTime": 1412786376386, 
+    "testDuration": 3558, 
+    "test_identifier": "Test 5: from Rozenrust, Veursestraatweg 104, Leidschendam (52.0920277815, 4.40899376617) to Gentelaan, Maastricht (50.8566845623, 5.66439186859)", 
+    "url": "http://91.240.240.130:9050/otp/routers/default/plan?walkSpeed=1.389&date=2014-10-08&mode=WALK,TRANSIT&numItineraries=1&time=12:00:36&fromPlace=52.092028,4.408994&maxWalkDistance=5000&optimize=QUICK&arriveBy=False&toPlace=50.856685,5.664392"
+  }, 
+  "6": {
+    "endTime": 1412786383627, 
+    "id": 6, 
+    "isError": false, 
+    "itineraryDuration": 206, 
+    "itineraryTransfers": 4, 
+    "startTime": 1412786379945, 
+    "testDuration": 3682, 
+    "test_identifier": "Test 6: from Gentelaan, Maastricht (50.8566845623, 5.66439186859) to Rozenrust, Veursestraatweg 104, Leidschendam (52.0920277815, 4.40899376617)", 
+    "url": "http://91.240.240.130:9050/otp/routers/default/plan?walkSpeed=1.389&date=2014-10-08&mode=WALK,TRANSIT&numItineraries=1&time=12:00:39&fromPlace=50.856685,5.664392&maxWalkDistance=5000&optimize=QUICK&arriveBy=False&toPlace=52.092028,4.408994"
+  }, 
+  "7": {
+    "endTime": 1412786384143, 
+    "id": 7, 
+    "isError": false, 
+    "itineraryDuration": 28, 
+    "itineraryTransfers": 0, 
+    "startTime": 1412786383628, 
+    "testDuration": 515, 
+    "test_identifier": "Test 7: from Rozenrust, Veursestraatweg 104, Leidschendam (52.0920277815, 4.40899376617) to Station Den Haag Centraal (52.080276, 4.325)", 
+    "url": "http://91.240.240.130:9050/otp/routers/default/plan?walkSpeed=1.389&date=2014-10-08&mode=WALK,TRANSIT&numItineraries=1&time=12:00:43&fromPlace=52.092028,4.408994&maxWalkDistance=5000&optimize=QUICK&arriveBy=False&toPlace=52.080276,4.325000"
+  }, 
+  "9": {
+    "endTime": 1412786384752, 
+    "id": 9, 
+    "isError": false, 
+    "itineraryDuration": 9, 
+    "itineraryTransfers": 0, 
+    "startTime": 1412786384147, 
+    "testDuration": 605, 
+    "test_identifier": "Test 9: from Station Den Haag HS (52.06972, 4.3225) to Station Den Haag Centraal (52.080276, 4.325)", 
+    "url": "http://91.240.240.130:9050/otp/routers/default/plan?walkSpeed=1.389&date=2014-10-08&mode=WALK,TRANSIT&numItineraries=1&time=12:00:44&fromPlace=52.069720,4.322500&maxWalkDistance=5000&optimize=QUICK&arriveBy=False&toPlace=52.080276,4.325000"
+  }, 
+  "10": {
+    "endTime": 1412786386798, 
+    "id": 10, 
+    "isError": false, 
+    "itineraryDuration": 68, 
+    "itineraryTransfers": 2, 
+    "startTime": 1412786384753, 
+    "testDuration": 2045, 
+    "test_identifier": "Test 10: from Station Maarssen (52.135277, 5.0336113) to Stations Hoofddorp (52.293335, 4.7005553)", 
+    "url": "http://91.240.240.130:9050/otp/routers/default/plan?walkSpeed=1.389&date=2014-10-08&mode=WALK,TRANSIT&numItineraries=1&time=12:00:44&fromPlace=52.135277,5.033611&maxWalkDistance=5000&optimize=QUICK&arriveBy=False&toPlace=52.293335,4.700555"
+  }, 
+  "11": {
+    "endTime": 1412786387620, 
+    "id": 11, 
+    "isError": false, 
+    "itineraryDuration": 12, 
+    "itineraryTransfers": 0, 
+    "startTime": 1412786386800, 
+    "testDuration": 820, 
+    "test_identifier": "Test 11: from Station Utrecht Centraal (52.08889, 5.1102777) to P+R Papendorp, Utrecht (52.069486, 5.083408)", 
+    "url": "http://91.240.240.130:9050/otp/routers/default/plan?walkSpeed=1.389&date=2014-10-08&mode=WALK,TRANSIT&numItineraries=1&time=12:00:46&fromPlace=52.088890,5.110278&maxWalkDistance=5000&optimize=QUICK&arriveBy=False&toPlace=52.069486,5.083408"
+  }, 
+  "13": {
+    "endTime": 1412786390627, 
+    "id": 13, 
+    "isError": false, 
+    "itineraryDuration": 204, 
+    "itineraryTransfers": 4, 
+    "startTime": 1412786387621, 
+    "testDuration": 3006, 
+    "test_identifier": "Test 13: from Boodtlaan, De Koog (53.1001427496, 4.76250951866) to Galjoenstraat, Utrecht (52.0984884693, 5.07909810936)", 
+    "url": "http://91.240.240.130:9050/otp/routers/default/plan?walkSpeed=1.389&date=2014-10-08&mode=WALK,TRANSIT&numItineraries=1&time=12:00:47&fromPlace=53.100143,4.762510&maxWalkDistance=5000&optimize=QUICK&arriveBy=False&toPlace=52.098488,5.079098"
+  }, 
+  "endTime": 1412786390628, 
+  "errorsFound": 1, 
+  "highestTestDuration": 5047, 
+  "startTime": 1412786365002, 
+  "totalTestDuration": 25626
+}

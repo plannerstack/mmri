@@ -1,0 +1,588 @@
+[
+{
+  "OTPTimedout": null, 
+  "OTPTotalComputationTime": null, 
+  "arrivalTime": "2014-10-15T13:24:44", 
+  "departureTime": "2014-10-15T12:05:23", 
+  "duration": 79, 
+  "id": 1, 
+  "isError": false, 
+  "legs": [
+    {
+      "arrivalTime": "2014-10-15T12:23:59", 
+      "departureTime": "2014-10-15T12:05:23", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T12:50:00", 
+      "departureTime": "2014-10-15T12:24:00", 
+      "line": "Intercity direct (Amsterdam Centraal)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T12:50:09", 
+      "departureTime": "2014-10-15T12:50:00", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T13:14:00", 
+      "departureTime": "2014-10-15T13:00:00", 
+      "line": "Intercity (Nijmegen)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T13:24:44", 
+      "departureTime": "2014-10-15T13:14:01", 
+      "line": "walk"
+    }
+  ], 
+  "transfers": 1
+},
+{
+  "OTPTimedout": null, 
+  "OTPTotalComputationTime": null, 
+  "arrivalTime": "2014-10-15T17:40:23", 
+  "departureTime": "2014-10-15T12:33:06", 
+  "duration": 307, 
+  "id": 2, 
+  "isError": false, 
+  "legs": [
+    {
+      "arrivalTime": "2014-10-15T12:36:18", 
+      "departureTime": "2014-10-15T12:33:06", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T13:10:25", 
+      "departureTime": "2014-10-15T12:36:19", 
+      "line": "51 (Maastricht)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T13:10:59", 
+      "departureTime": "2014-10-15T13:10:25", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T14:29:00", 
+      "departureTime": "2014-10-15T13:28:00", 
+      "line": "Intercity (Schagen)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T14:29:10", 
+      "departureTime": "2014-10-15T14:29:00", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T15:14:00", 
+      "departureTime": "2014-10-15T14:33:00", 
+      "line": "Intercity (Den Haag Centraal)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T15:15:34", 
+      "departureTime": "2014-10-15T15:14:00", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T17:08:00", 
+      "departureTime": "2014-10-15T15:26:00", 
+      "line": "19 (Hulst)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T17:08:25", 
+      "departureTime": "2014-10-15T17:08:00", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T17:27:00", 
+      "departureTime": "2014-10-15T17:10:00", 
+      "line": "489 (Kloosterzande)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T17:40:23", 
+      "departureTime": "2014-10-15T17:27:01", 
+      "line": "walk"
+    }
+  ], 
+  "transfers": 4
+},
+{
+  "OTPTimedout": null, 
+  "OTPTotalComputationTime": null, 
+  "arrivalTime": "2014-10-15T13:46:11", 
+  "departureTime": "2014-10-15T12:10:18", 
+  "duration": 95, 
+  "id": 3, 
+  "isError": false, 
+  "legs": [
+    {
+      "arrivalTime": "2014-10-15T12:33:23", 
+      "departureTime": "2014-10-15T12:10:18", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T13:37:34", 
+      "departureTime": "2014-10-15T12:33:24", 
+      "line": "400 (Utrecht CS Busstation West)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T13:46:11", 
+      "departureTime": "2014-10-15T13:37:35", 
+      "line": "walk"
+    }
+  ], 
+  "transfers": 0
+},
+{
+  "OTPTimedout": null, 
+  "OTPTotalComputationTime": null, 
+  "arrivalTime": "2014-10-15T14:00:09", 
+  "departureTime": "2014-10-15T12:10:05", 
+  "duration": 110, 
+  "id": 4, 
+  "isError": false, 
+  "legs": [
+    {
+      "arrivalTime": "2014-10-15T12:11:52", 
+      "departureTime": "2014-10-15T12:10:05", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T12:35:00", 
+      "departureTime": "2014-10-15T12:11:53", 
+      "line": "7 (Willemsplein)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T12:37:17", 
+      "departureTime": "2014-10-15T12:35:00", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T13:03:00", 
+      "departureTime": "2014-10-15T12:39:00", 
+      "line": "Intercity direct (Breda)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T13:03:23", 
+      "departureTime": "2014-10-15T13:03:00", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T13:42:00", 
+      "departureTime": "2014-10-15T13:10:00", 
+      "line": "Intercity (Zwolle)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T13:43:40", 
+      "departureTime": "2014-10-15T13:42:00", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T13:53:14", 
+      "departureTime": "2014-10-15T13:45:05", 
+      "line": "160 (Uden Busstation via Schijndel)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T14:00:09", 
+      "departureTime": "2014-10-15T13:53:15", 
+      "line": "walk"
+    }
+  ], 
+  "transfers": 3
+},
+{
+  "OTPTimedout": null, 
+  "OTPTotalComputationTime": null, 
+  "arrivalTime": "2014-10-15T15:27:14", 
+  "departureTime": "2014-10-15T12:00:57", 
+  "duration": 206, 
+  "id": 5, 
+  "isError": false, 
+  "legs": [
+    {
+      "arrivalTime": "2014-10-15T12:03:47", 
+      "departureTime": "2014-10-15T12:00:57", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T12:09:07", 
+      "departureTime": "2014-10-15T12:03:48", 
+      "line": "45 (Den Haag Centraal)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T12:11:31", 
+      "departureTime": "2014-10-15T12:09:07", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T12:42:39", 
+      "departureTime": "2014-10-15T12:17:07", 
+      "line": "E (Slinge)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T12:44:08", 
+      "departureTime": "2014-10-15T12:42:39", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T14:00:00", 
+      "departureTime": "2014-10-15T12:48:00", 
+      "line": "Intercity (Venlo)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T14:00:26", 
+      "departureTime": "2014-10-15T14:00:00", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T15:05:00", 
+      "departureTime": "2014-10-15T14:02:00", 
+      "line": "Intercity (Maastricht)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T15:05:58", 
+      "departureTime": "2014-10-15T15:05:00", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T15:26:00", 
+      "departureTime": "2014-10-15T15:11:00", 
+      "line": "2 (Oud Caberg)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T15:27:14", 
+      "departureTime": "2014-10-15T15:26:01", 
+      "line": "walk"
+    }
+  ], 
+  "transfers": 4
+},
+{
+  "OTPTimedout": null, 
+  "OTPTotalComputationTime": null, 
+  "arrivalTime": "2014-10-15T15:21:30", 
+  "departureTime": "2014-10-15T12:04:51", 
+  "duration": 196, 
+  "id": 6, 
+  "isError": false, 
+  "legs": [
+    {
+      "arrivalTime": "2014-10-15T12:06:03", 
+      "departureTime": "2014-10-15T12:04:51", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T12:19:39", 
+      "departureTime": "2014-10-15T12:06:04", 
+      "line": "1 (AZM - De Heeg)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T12:20:29", 
+      "departureTime": "2014-10-15T12:19:39", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T13:29:00", 
+      "departureTime": "2014-10-15T12:28:00", 
+      "line": "Intercity (Alkmaar)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T13:29:10", 
+      "departureTime": "2014-10-15T13:29:00", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T14:42:00", 
+      "departureTime": "2014-10-15T13:33:00", 
+      "line": "Intercity (Den Haag Centraal)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T14:43:46", 
+      "departureTime": "2014-10-15T14:42:00", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T15:08:29", 
+      "departureTime": "2014-10-15T14:44:40", 
+      "line": "E (Den Haag Centraal)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T15:10:51", 
+      "departureTime": "2014-10-15T15:08:29", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T15:18:32", 
+      "departureTime": "2014-10-15T15:12:16", 
+      "line": "45 (Leiden via Voorschoten)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T15:21:30", 
+      "departureTime": "2014-10-15T15:18:33", 
+      "line": "walk"
+    }
+  ], 
+  "transfers": 4
+},
+{
+  "OTPTimedout": null, 
+  "OTPTotalComputationTime": null, 
+  "arrivalTime": "2014-10-15T12:27:37", 
+  "departureTime": "2014-10-15T12:00:57", 
+  "duration": 26, 
+  "id": 7, 
+  "isError": false, 
+  "legs": [
+    {
+      "arrivalTime": "2014-10-15T12:03:47", 
+      "departureTime": "2014-10-15T12:00:57", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T12:24:32", 
+      "departureTime": "2014-10-15T12:03:48", 
+      "line": "45 (Den Haag Centraal)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T12:27:37", 
+      "departureTime": "2014-10-15T12:24:33", 
+      "line": "walk"
+    }
+  ], 
+  "transfers": 0
+},
+{
+  "OTPTimedout": null, 
+  "OTPTotalComputationTime": null, 
+  "arrivalTime": "2014-10-15T15:01:46", 
+  "departureTime": "2014-10-15T12:07:20", 
+  "duration": 174, 
+  "id": 8, 
+  "isError": false, 
+  "legs": [
+    {
+      "arrivalTime": "2014-10-15T12:13:10", 
+      "departureTime": "2014-10-15T12:07:20", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T12:26:44", 
+      "departureTime": "2014-10-15T12:13:11", 
+      "line": "51 (Zutphen Busstation)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T12:28:08", 
+      "departureTime": "2014-10-15T12:26:44", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T12:55:00", 
+      "departureTime": "2014-10-15T12:36:00", 
+      "line": "Intercity (Roosendaal)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T12:55:42", 
+      "departureTime": "2014-10-15T12:55:00", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T13:39:00", 
+      "departureTime": "2014-10-15T13:01:00", 
+      "line": "Intercity (Den Helder)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T13:39:25", 
+      "departureTime": "2014-10-15T13:39:00", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T14:22:00", 
+      "departureTime": "2014-10-15T13:44:00", 
+      "line": "Intercity (Den Haag Centraal)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T14:22:27", 
+      "departureTime": "2014-10-15T14:22:00", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T14:46:00", 
+      "departureTime": "2014-10-15T14:28:00", 
+      "line": "Sprinter (Breda)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T15:01:46", 
+      "departureTime": "2014-10-15T14:46:01", 
+      "line": "walk"
+    }
+  ], 
+  "transfers": 4
+},
+{
+  "OTPTimedout": null, 
+  "OTPTotalComputationTime": null, 
+  "arrivalTime": "2014-10-15T12:15:22", 
+  "departureTime": "2014-10-15T12:06:51", 
+  "duration": 8, 
+  "id": 9, 
+  "isError": false, 
+  "legs": [
+    {
+      "arrivalTime": "2014-10-15T12:07:18", 
+      "departureTime": "2014-10-15T12:06:51", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T12:13:29", 
+      "departureTime": "2014-10-15T12:07:19", 
+      "line": "29 (Grote Kerk)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T12:15:22", 
+      "departureTime": "2014-10-15T12:13:30", 
+      "line": "walk"
+    }
+  ], 
+  "transfers": 0
+},
+{
+  "OTPTimedout": null, 
+  "OTPTotalComputationTime": null, 
+  "arrivalTime": "2014-10-15T13:29:42", 
+  "departureTime": "2014-10-15T12:08:20", 
+  "duration": 81, 
+  "id": 10, 
+  "isError": false, 
+  "legs": [
+    {
+      "arrivalTime": "2014-10-15T12:08:59", 
+      "departureTime": "2014-10-15T12:08:20", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T12:14:00", 
+      "departureTime": "2014-10-15T12:09:00", 
+      "line": "Sprinter (Breukelen)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T12:59:00", 
+      "departureTime": "2014-10-15T12:41:00", 
+      "line": "Sprinter (Uitgeest)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T13:00:22", 
+      "departureTime": "2014-10-15T12:59:00", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T13:22:00", 
+      "departureTime": "2014-10-15T13:04:00", 
+      "line": "Sprinter (Hoofddorp)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T13:29:42", 
+      "departureTime": "2014-10-15T13:22:01", 
+      "line": "walk"
+    }
+  ], 
+  "transfers": 2
+},
+{
+  "OTPTimedout": null, 
+  "OTPTotalComputationTime": null, 
+  "arrivalTime": "2014-10-15T12:12:58", 
+  "departureTime": "2014-10-15T12:02:08", 
+  "duration": 10, 
+  "id": 11, 
+  "isError": false, 
+  "legs": [
+    {
+      "arrivalTime": "2014-10-15T12:04:49", 
+      "departureTime": "2014-10-15T12:02:08", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T12:12:52", 
+      "departureTime": "2014-10-15T12:04:50", 
+      "line": "29 (Papendorp Zuid)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T12:12:58", 
+      "departureTime": "2014-10-15T12:12:53", 
+      "line": "walk"
+    }
+  ], 
+  "transfers": 0
+},
+{
+  "OTPTimedout": null, 
+  "OTPTotalComputationTime": null, 
+  "error": null, 
+  "id": 12, 
+  "isError": true
+},
+{
+  "OTPTimedout": null, 
+  "OTPTotalComputationTime": null, 
+  "arrivalTime": "2014-10-15T15:28:31", 
+  "departureTime": "2014-10-15T12:23:12", 
+  "duration": 185, 
+  "id": 13, 
+  "isError": false, 
+  "legs": [
+    {
+      "arrivalTime": "2014-10-15T12:24:35", 
+      "departureTime": "2014-10-15T12:23:12", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T12:54:30", 
+      "departureTime": "2014-10-15T12:24:36", 
+      "line": "28 (Veerhaven)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T12:55:32", 
+      "departureTime": "2014-10-15T12:54:30", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T13:20:00", 
+      "departureTime": "2014-10-15T13:00:00", 
+      "line": "Den Helder (Texel - Den Helder)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T13:20:41", 
+      "departureTime": "2014-10-15T13:20:00", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T13:32:00", 
+      "departureTime": "2014-10-15T13:24:19", 
+      "line": "33 (Den Helder Station)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T13:32:37", 
+      "departureTime": "2014-10-15T13:32:00", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T15:01:00", 
+      "departureTime": "2014-10-15T13:34:00", 
+      "line": "Intercity (Nijmegen)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T15:03:12", 
+      "departureTime": "2014-10-15T15:01:00", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T15:15:33", 
+      "departureTime": "2014-10-15T15:09:16", 
+      "line": "38 (Maarssen NS via Lage Weide)"
+    }, 
+    {
+      "arrivalTime": "2014-10-15T15:28:31", 
+      "departureTime": "2014-10-15T15:15:34", 
+      "line": "walk"
+    }
+  ], 
+  "transfers": 4
+}
+]

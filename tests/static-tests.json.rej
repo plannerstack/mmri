@@ -1,0 +1,35 @@
+***************
+*** 187,194 ****
+  			"longitude": 4.76250951865836,
+  			"description": "Boodtlaan, De Koog"
+  		},
+- 		"time": "2013-05-13T12:00:00",
+  		"timeType": "D",
+- 		"comment": "Many transit mode types (11)"
+  	}
+  ]
+--- 187,210 ----
+  			"longitude": 4.76250951865836,
+  			"description": "Boodtlaan, De Koog"
+  		},
++ 		"time": "2014-06-13T12:00:00",
+  		"timeType": "D",
++ 		"comment": "Many transit mode types (11) NOT WORKING"
++ 	},
++ 	{
++ 		"id": 13,
++ 		"to": {
++ 			"latitude": 52.09848846931021,
++ 			"longitude": 5.079098109360649,
++ 			"description": "Galjoenstraat, Utrecht"
++ 		},
++ 		"from": {
++ 			"latitude": 53.10014274960883,
++ 			"longitude": 4.76250951865836,
++ 			"description": "Boodtlaan, De Koog"
++ 		},
++ 		"time": "2014-06-13T12:00:00",
++ 		"timeType": "D",
++ 		"comment": "Many transit mode types (11) OTHER WAY AROUND: WORKING (?)"
+  	}
+  ]

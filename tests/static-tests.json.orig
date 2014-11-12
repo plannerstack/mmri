@@ -11,7 +11,7 @@
 			"longitude": 4.947208392733043,
 			"description": "Bijlmerdreef, Amsterdam"
 		},
-		"time": "2014-08-13T12:00:00",
+		"time": "2013-05-13T12:00:00",
 		"timeType": "D",
 		"comment": "Three possible train trips"
 	},
@@ -27,7 +27,7 @@
 			"longitude": 4.086579083925454,
 			"description": "Baalhoek"
 		},
-		"time": "2014-08-13T12:00:00",
+		"time": "2013-05-13T12:00:00",
 		"timeType": "D",
 		"comment": "Too hard on OTP without precomputed stop"
 	},
@@ -43,7 +43,7 @@
 			"longitude": 5.113009511375861,
 			"description": "Laan van Puntenburg, Utrecht"
 		},
-		"time": "2014-08-13T12:00:00",
+		"time": "2013-05-13T12:00:00",
 		"timeType": "D",
 		"comment": "Taking the bus is faster than taking the train"
 	},
@@ -59,7 +59,7 @@
 			"longitude": 5.330027610326467,
 			"description": "Brabantlaan 1, 's-Hertogenbosch"
 		},
-		"time": "2014-08-13T12:00:00",
+		"time": "2013-05-13T12:00:00",
 		"timeType": "D",
 		"comment": "Many different transit mode possibilities"
 	},
@@ -75,7 +75,7 @@
 			"longitude": 5.6643918685934445,
 			"description": "Gentelaan, Maastricht"
 		},
-		"time": "2014-08-13T12:00:00",
+		"time": "2013-05-13T12:00:00",
 		"timeType": "D",
 		"comment": "Planning drama :-)"
 	},
@@ -91,7 +91,7 @@
 			"longitude": 4.408993766169693,
 			"description": "Rozenrust, Veursestraatweg 104, Leidschendam"
 		},
-		"time": "2014-08-13T12:00:00",
+		"time": "2013-05-13T12:00:00",
 		"timeType": "D",
 		"comment": "Will I get home tonight?"
 	},
@@ -107,7 +107,7 @@
 			"longitude": 4.325,
 			"description": "Station Den Haag Centraal"
 		},
-		"time": "2014-08-13T12:00:00",
+		"time": "2013-05-13T12:00:00",
 		"timeType": "D",
 		"comment": ""
 	},
@@ -123,7 +123,7 @@
 			"longitude": 4.376178869525722,
 			"description": "Kluyverweg, Delft"
 		},
-		"time": "2014-08-13T12:00:00",
+		"time": "2013-05-13T12:00:00",
 		"timeType": "D",
 		"comment": "Many altervatives, including choice between train and bus between Rotterdam and Delft"
 	},
@@ -139,7 +139,7 @@
 			"longitude": 4.325,
 			"description": "Station Den Haag Centraal"
 		},
-		"time": "2014-08-13T12:00:00",
+		"time": "2013-05-13T12:00:00",
 		"timeType": "D",
 		"comment": "Tram is sometimes faster than train"
 	},
@@ -155,7 +155,7 @@
 			"longitude": 4.7005553,
 			"description": "Stations Hoofddorp"
 		},
-		"time": "2014-08-13T12:00:00",
+		"time": "2013-05-13T12:00:00",
 		"timeType": "D",
 		"comment": "Multiple transfer options; high chance of delay."
 	},
@@ -171,7 +171,7 @@
 			"longitude": 5.083408,
 			"description": "P+R Papendorp, Utrecht"
 		},
-		"time": "2014-08-13T12:00:00",
+		"time": "2013-05-13T12:00:00",
 		"timeType": "D",
 		"comment": "Multiple buslines"
 	},
@@ -187,72 +187,24 @@
 			"longitude": 4.76250951865836,
 			"description": "Boodtlaan, De Koog"
 		},
-		"time": "2014-08-13T12:00:00",
+		"time": "2013-05-13T12:00:00",
 		"timeType": "D",
-		"comment": "Many transit mode types (11) NOT WORKING"
+		"comment": "Many transit mode types (11)"
 	},
 	{
 		"id": 13,
-		"to": {
-			"latitude": 52.09848846931021,
-			"longitude": 5.079098109360649,
-			"description": "Galjoenstraat, Utrecht"
-		},
 		"from": {
-			"latitude": 53.10014274960883,
-			"longitude": 4.76250951865836,
-			"description": "Boodtlaan, De Koog"
+			"latitude": 51.9935827,
+			"longitude": 4.3872289,
+			"description": "Molengraaffsingel, Delft"
 		},
-		"time": "2014-08-13T12:00:00",
-		"timeType": "D",
-		"comment": "Many transit mode types (11) OTHER WAY AROUND: WORKING (?)"
-	},
-	{
-	    "to": {
-	        "latitude": 52.07624859,
-	        "longitude": 4.28629727,
-	        "description": "Newtonstraat 4M2562KR  's-Gravenhage"
-	    },
-	    "from": {
-	        "latitude": 52.00995737,
-	        "longitude": 4.35556786,
-	        "description": "Phoenixstraat 82611AL  Delft"
-	    },
-	    "id": 14,
-	    "comment": "Going by car",
-	    "timeType": "D",
-	    "time": "2014-11-06T23:53:00"
-	},
-	{
-	    "to": {
-	        "latitude": 52.22768134,
-	        "longitude": 5.17134517,
-	        "description": "Hilversum 10Melkpad 321217KD  Hilversum"
-	    },
-	    "from": {
-	        "latitude": 52.29494658,
-	        "longitude": 5.15977142,
-	        "description": "Artisans Naarden B.V.St. Vitusstraat 40B1411PV  Naarden"
-	    },
-	    "id": 15,
-	    "comment": "Takes extremely long",
-	    "timeType": "D",
-	    "time": "2014-11-10T19:47:00"
-	},
-	{
-	    "to": {
-	        "latitude": 51.99351349,
-	        "longitude": 4.3862784,
-	        "description": "Ambit B.V.Molengraaffsingel 122629JD  Delft"
-	    },
-	    "from": {
-	        "latitude": 52.01276487,
-	        "longitude": 4.35488031,
-	        "description": "Delft Museumhotel Vastgoed B.V.Oude Delft 1892611HD  Delft"
-	    },
-	    "id": 16,
-	    "comment": "Should just return!",
-	    "timeType": "D",
-	    "time": "2014-11-10T10:22:00"
+		"to": {
+			"latitude": 52.2077532,
+			"longitude": 4.402618999999959,
+			"description": "Rijnmond, Katwijk"
+		},
+		"time": "2013-05-13T13:20:00",
+		"timeType": "A",
+		"comment": "While this doesn't return a trip (not safely accessible), this case between the same points on another day does, although a few hours too early: http://opentripplanner.nl/opentripplanner-api-webapp/ws/plan?arriveBy=true&date=06%2F13%2F2013&time=13%3A20&fromPlace=51.9935827%2C4.3872289&toPlace=52.2077532%2C4.402618999999959&mode=TRANSIT%2CWALK&optimize=QUICK&numItineraries=1&maxWalkDistance=2000"
 	}
 ]

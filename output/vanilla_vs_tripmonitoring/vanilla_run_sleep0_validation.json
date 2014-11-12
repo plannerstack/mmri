@@ -1,0 +1,150 @@
+{
+  "1": {
+    "endTime": 1413390540297, 
+    "id": 1, 
+    "isError": false, 
+    "itineraryDuration": 79, 
+    "itineraryTransfers": 1, 
+    "startTime": 1413390538330, 
+    "testDuration": 1967, 
+    "test_identifier": "Test 1: from Jensiusstraat, Rotterdam (51.9317117293, 4.48407882979) to Bijlmerdreef, Amsterdam (52.313377612, 4.94720839273)", 
+    "url": "http://planner.plannerstack.org/otp/routers/default/plan?walkSpeed=1.389&date=2014-10-15&mode=WALK,TRANSIT&numItineraries=1&time=12:00:58&fromPlace=51.931712,4.484079&maxWalkDistance=5000&optimize=QUICK&arriveBy=False&toPlace=52.313378,4.947208"
+  }, 
+  "2": {
+    "endTime": 1413390545690, 
+    "id": 2, 
+    "isError": false, 
+    "itineraryDuration": 307, 
+    "itineraryTransfers": 4, 
+    "startTime": 1413390542298, 
+    "testDuration": 3392, 
+    "test_identifier": "Test 2: from Aalbeek (50.9016354322, 5.85175063558) to Baalhoek (51.3622333125, 4.08657908393)", 
+    "url": "http://planner.plannerstack.org/otp/routers/default/plan?walkSpeed=1.389&date=2014-10-15&mode=WALK,TRANSIT&numItineraries=1&time=12:00:02&fromPlace=50.901635,5.851751&maxWalkDistance=5000&optimize=QUICK&arriveBy=False&toPlace=51.362233,4.086579"
+  }, 
+  "3": {
+    "endTime": 1413390548416, 
+    "id": 3, 
+    "isError": false, 
+    "itineraryDuration": 95, 
+    "itineraryTransfers": 0, 
+    "startTime": 1413390547692, 
+    "testDuration": 724, 
+    "test_identifier": "Test 3: from Kanonnierstraat, Oosterhout (51.6458024736, 4.85880195421) to Laan van Puntenburg, Utrecht (52.0881127608, 5.11300951138)", 
+    "url": "http://planner.plannerstack.org/otp/routers/default/plan?walkSpeed=1.389&date=2014-10-15&mode=WALK,TRANSIT&numItineraries=1&time=12:00:07&fromPlace=51.645802,4.858802&maxWalkDistance=5000&optimize=QUICK&arriveBy=False&toPlace=52.088113,5.113010"
+  }, 
+  "4": {
+    "endTime": 1413390553335, 
+    "id": 4, 
+    "isError": false, 
+    "itineraryDuration": 110, 
+    "itineraryTransfers": 3, 
+    "startTime": 1413390550418, 
+    "testDuration": 2917, 
+    "test_identifier": "Test 4: from Burgemeester Oudlaan, Rotterdam (51.9197761122, 4.52520829071) to Brabantlaan 1, 's-Hertogenbosch (51.6780942165, 5.33002761033)", 
+    "url": "http://planner.plannerstack.org/otp/routers/default/plan?walkSpeed=1.389&date=2014-10-15&mode=WALK,TRANSIT&numItineraries=1&time=12:00:10&fromPlace=51.919776,4.525208&maxWalkDistance=5000&optimize=QUICK&arriveBy=False&toPlace=51.678094,5.330028"
+  }, 
+  "5": {
+    "endTime": 1413390559702, 
+    "id": 5, 
+    "isError": false, 
+    "itineraryDuration": 206, 
+    "itineraryTransfers": 4, 
+    "startTime": 1413390555337, 
+    "testDuration": 4365, 
+    "test_identifier": "Test 5: from Rozenrust, Veursestraatweg 104, Leidschendam (52.0920277815, 4.40899376617) to Gentelaan, Maastricht (50.8566845623, 5.66439186859)", 
+    "url": "http://planner.plannerstack.org/otp/routers/default/plan?walkSpeed=1.389&date=2014-10-15&mode=WALK,TRANSIT&numItineraries=1&time=12:00:15&fromPlace=52.092028,4.408994&maxWalkDistance=5000&optimize=QUICK&arriveBy=False&toPlace=50.856685,5.664392"
+  }, 
+  "6": {
+    "endTime": 1413390565020, 
+    "id": 6, 
+    "isError": false, 
+    "itineraryDuration": 196, 
+    "itineraryTransfers": 4, 
+    "startTime": 1413390561703, 
+    "testDuration": 3317, 
+    "test_identifier": "Test 6: from Gentelaan, Maastricht (50.8566845623, 5.66439186859) to Rozenrust, Veursestraatweg 104, Leidschendam (52.0920277815, 4.40899376617)", 
+    "url": "http://planner.plannerstack.org/otp/routers/default/plan?walkSpeed=1.389&date=2014-10-15&mode=WALK,TRANSIT&numItineraries=1&time=12:00:21&fromPlace=50.856685,5.664392&maxWalkDistance=5000&optimize=QUICK&arriveBy=False&toPlace=52.092028,4.408994"
+  }, 
+  "7": {
+    "endTime": 1413390567875, 
+    "id": 7, 
+    "isError": false, 
+    "itineraryDuration": 26, 
+    "itineraryTransfers": 0, 
+    "startTime": 1413390567021, 
+    "testDuration": 854, 
+    "test_identifier": "Test 7: from Rozenrust, Veursestraatweg 104, Leidschendam (52.0920277815, 4.40899376617) to Station Den Haag Centraal (52.080276, 4.325)", 
+    "url": "http://planner.plannerstack.org/otp/routers/default/plan?walkSpeed=1.389&date=2014-10-15&mode=WALK,TRANSIT&numItineraries=1&time=12:00:27&fromPlace=52.092028,4.408994&maxWalkDistance=5000&optimize=QUICK&arriveBy=False&toPlace=52.080276,4.325000"
+  }, 
+  "8": {
+    "endTime": 1413390573199, 
+    "id": 8, 
+    "isError": false, 
+    "itineraryDuration": 174, 
+    "itineraryTransfers": 4, 
+    "startTime": 1413390569877, 
+    "testDuration": 3322, 
+    "test_identifier": "Test 8: from De Waterkant, Zutphen (52.1261181294, 6.23942596976) to Kluyverweg, Delft (51.9886901013, 4.37617886953)", 
+    "url": "http://planner.plannerstack.org/otp/routers/default/plan?walkSpeed=1.389&date=2014-10-15&mode=WALK,TRANSIT&numItineraries=1&time=12:00:29&fromPlace=52.126118,6.239426&maxWalkDistance=5000&optimize=QUICK&arriveBy=False&toPlace=51.988690,4.376179"
+  }, 
+  "9": {
+    "endTime": 1413390576052, 
+    "id": 9, 
+    "isError": false, 
+    "itineraryDuration": 8, 
+    "itineraryTransfers": 0, 
+    "startTime": 1413390575201, 
+    "testDuration": 851, 
+    "test_identifier": "Test 9: from Station Den Haag HS (52.06972, 4.3225) to Station Den Haag Centraal (52.080276, 4.325)", 
+    "url": "http://planner.plannerstack.org/otp/routers/default/plan?walkSpeed=1.389&date=2014-10-15&mode=WALK,TRANSIT&numItineraries=1&time=12:00:35&fromPlace=52.069720,4.322500&maxWalkDistance=5000&optimize=QUICK&arriveBy=False&toPlace=52.080276,4.325000"
+  }, 
+  "10": {
+    "endTime": 1413390579752, 
+    "id": 10, 
+    "isError": false, 
+    "itineraryDuration": 81, 
+    "itineraryTransfers": 2, 
+    "startTime": 1413390578053, 
+    "testDuration": 1699, 
+    "test_identifier": "Test 10: from Station Maarssen (52.135277, 5.0336113) to Stations Hoofddorp (52.293335, 4.7005553)", 
+    "url": "http://planner.plannerstack.org/otp/routers/default/plan?walkSpeed=1.389&date=2014-10-15&mode=WALK,TRANSIT&numItineraries=1&time=12:00:38&fromPlace=52.135277,5.033611&maxWalkDistance=5000&optimize=QUICK&arriveBy=False&toPlace=52.293335,4.700555"
+  }, 
+  "11": {
+    "endTime": 1413390582086, 
+    "id": 11, 
+    "isError": false, 
+    "itineraryDuration": 10, 
+    "itineraryTransfers": 0, 
+    "startTime": 1413390581754, 
+    "testDuration": 332, 
+    "test_identifier": "Test 11: from Station Utrecht Centraal (52.08889, 5.1102777) to P+R Papendorp, Utrecht (52.069486, 5.083408)", 
+    "url": "http://planner.plannerstack.org/otp/routers/default/plan?walkSpeed=1.389&date=2014-10-15&mode=WALK,TRANSIT&numItineraries=1&time=12:00:41&fromPlace=52.088890,5.110278&maxWalkDistance=5000&optimize=QUICK&arriveBy=False&toPlace=52.069486,5.083408"
+  }, 
+  "12": {
+    "endTime": 1413390589108, 
+    "id": 12, 
+    "isError": true, 
+    "itineraryDuration": 0, 
+    "itineraryTransfers": 0, 
+    "startTime": 1413390584088, 
+    "testDuration": 5020, 
+    "test_identifier": "Test 12: from Galjoenstraat, Utrecht (52.0984884693, 5.07909810936) to Boodtlaan, De Koog (53.1001427496, 4.76250951866)", 
+    "url": "http://planner.plannerstack.org/otp/routers/default/plan?walkSpeed=1.389&date=2014-10-15&mode=WALK,TRANSIT&numItineraries=1&time=12:00:44&fromPlace=52.098488,5.079098&maxWalkDistance=5000&optimize=QUICK&arriveBy=False&toPlace=53.100143,4.762510"
+  }, 
+  "13": {
+    "endTime": 1413390593801, 
+    "id": 13, 
+    "isError": false, 
+    "itineraryDuration": 185, 
+    "itineraryTransfers": 4, 
+    "startTime": 1413390591109, 
+    "testDuration": 2692, 
+    "test_identifier": "Test 13: from Boodtlaan, De Koog (53.1001427496, 4.76250951866) to Galjoenstraat, Utrecht (52.0984884693, 5.07909810936)", 
+    "url": "http://planner.plannerstack.org/otp/routers/default/plan?walkSpeed=1.389&date=2014-10-15&mode=WALK,TRANSIT&numItineraries=1&time=12:00:51&fromPlace=53.100143,4.762510&maxWalkDistance=5000&optimize=QUICK&arriveBy=False&toPlace=52.098488,5.079098"
+  }, 
+  "endTime": 1413390595802, 
+  "errorsFound": 1, 
+  "highestTestDuration": 5020, 
+  "startTime": 1413390538325, 
+  "totalTestDuration": 57477
+}

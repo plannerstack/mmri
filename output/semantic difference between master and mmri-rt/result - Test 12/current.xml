@@ -1,0 +1,647 @@
+<response>
+	<comment>CURRENT</comment>
+	<requestParameters>
+		<entry>
+			<key>date</key>
+			<value>2014-10-09</value>
+		</entry>
+		<entry>
+			<key>mode</key>
+			<value>WALK,TRANSIT</value>
+		</entry>
+		<entry>
+			<key>walkSpeed</key>
+			<value>1.389</value>
+		</entry>
+		<entry>
+			<key>arriveBy</key>
+			<value>False</value>
+		</entry>
+		<entry>
+			<key>optimize</key>
+			<value>QUICK</value>
+		</entry>
+		<entry>
+			<key>fromPlace</key>
+			<value>52.098488,5.079098</value>
+		</entry>
+		<entry>
+			<key>toPlace</key>
+			<value>53.100143,4.762510</value>
+		</entry>
+		<entry>
+			<key>time</key>
+			<value>12:00:18</value>
+		</entry>
+		<entry>
+			<key>maxWalkDistance</key>
+			<value>5000</value>
+		</entry>
+		<entry>
+			<key>numItineraries</key>
+			<value>1</value>
+		</entry>
+	</requestParameters>
+	<debugOutput>
+		<precalculationTime>69</precalculationTime>
+		<pathCalculationTime>3108</pathCalculationTime>
+		<pathTimes>3107</pathTimes>
+		<renderingTime>3</renderingTime>
+		<totalTime>3180</totalTime>
+		<timedOut>false</timedOut>
+	</debugOutput>
+	<plan>
+		<date>2014-10-09T12:00:18+02:00</date>
+		<from orig="">
+			<name>Galjoenstraat</name>
+			<lon>5.0790702156017655</lon>
+			<lat>52.09835563998737</lat>
+			<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [5.0790702156017655,52.09835563998737]}</geometry>
+		</from>
+		<to orig="">
+			<name>Badweg</name>
+			<lon>4.762414416904899</lon>
+			<lat>53.099970942687335</lat>
+			<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [4.762414416904899,53.099970942687335]}</geometry>
+		</to>
+		<itineraries>
+			<itinerary>
+				<duration>14865.0</duration>
+				<startTime>2014-10-09T12:15:01+02:00</startTime>
+				<endTime>2014-10-09T16:22:46+02:00</endTime>
+				<walkTime>1035</walkTime>
+				<transitTime>10440</transitTime>
+				<waitingTime>3390</waitingTime>
+				<walkDistance>1378.7808532243318</walkDistance>
+				<walkLimitExceeded>false</walkLimitExceeded>
+				<elevationLost>0.0</elevationLost>
+				<elevationGained>0.0</elevationGained>
+				<transfers>4</transfers>
+				<legs>
+					<leg agencyTimeZoneOffset="7200000" interlineWithPreviousLeg="false" mode="WALK" rentedBike="false" route="">
+						<startTime>2014-10-09T12:15:01+02:00</startTime>
+						<endTime>2014-10-09T12:21:59+02:00</endTime>
+						<departureDelay>0</departureDelay>
+						<arrivalDelay>0</arrivalDelay>
+						<realTime>false</realTime>
+						<distance>550.7113222209894</distance>
+						<pathway>false</pathway>
+						<from orig="">
+							<name>Galjoenstraat</name>
+							<lon>5.0790702156017655</lon>
+							<lat>52.09835563998737</lat>
+							<departure>2014-10-09T12:15:01+02:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [5.0790702156017655,52.09835563998737]}</geometry>
+						</from>
+						<to stopIndex="4" stopSequence="5">
+							<name>Utrecht, Schepenbuurt</name>
+							<stopId>
+								<agencyId>AQUALINER</agencyId>
+								<id>115612</id>
+							</stopId>
+							<stopCode>50007090</stopCode>
+							<lon>5.086057</lon>
+							<lat>52.098074</lat>
+							<arrival>2014-10-09T12:21:59+02:00</arrival>
+							<departure>2014-10-09T12:22:00+02:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [5.086057,52.098074]}</geometry>
+						</to>
+						<legGeometry>
+							<length>13</length>
+							<points>um~|He__^R}FFyBDmAJiC{AQBeAb@gLDoAHoBFqAB]`@F</points>
+						</legGeometry>
+						<steps>
+							<walkSteps>
+								<distance>204.19053010942923</distance>
+								<relativeDirection>DEPART</relativeDirection>
+								<streetName>Galjoenstraat</streetName>
+								<absoluteDirection>EAST</absoluteDirection>
+								<stayOn>false</stayOn>
+								<area>false</area>
+								<bogusName>false</bogusName>
+								<lon>5.0790702156017655</lon>
+								<lat>52.09835563998737</lat>
+								<elevation/>
+							</walkSteps>
+							<walkSteps>
+								<distance>51.58139537976599</distance>
+								<relativeDirection>LEFT</relativeDirection>
+								<streetName>Aakplein</streetName>
+								<absoluteDirection>NORTH</absoluteDirection>
+								<stayOn>false</stayOn>
+								<area>false</area>
+								<bogusName>false</bogusName>
+								<lon>5.0820363</lon>
+								<lat>52.098127600000005</lat>
+								<elevation/>
+							</walkSteps>
+							<walkSteps>
+								<distance>275.05920452978796</distance>
+								<relativeDirection>RIGHT</relativeDirection>
+								<streetName>Schoenerstraat</streetName>
+								<absoluteDirection>EAST</absoluteDirection>
+								<stayOn>false</stayOn>
+								<area>false</area>
+								<bogusName>false</bogusName>
+								<lon>5.082123200000001</lon>
+								<lat>52.098588400000004</lat>
+								<elevation/>
+							</walkSteps>
+							<walkSteps>
+								<distance>19.88019220200613</distance>
+								<relativeDirection>RIGHT</relativeDirection>
+								<streetName>Cartesiusweg</streetName>
+								<absoluteDirection>SOUTH</absoluteDirection>
+								<stayOn>false</stayOn>
+								<area>false</area>
+								<bogusName>false</bogusName>
+								<lon>5.0861114</lon>
+								<lat>52.0982477</lat>
+								<elevation/>
+							</walkSteps>
+						</steps>
+						<duration>418.0</duration>
+					</leg>
+					<leg agencyId="UOV" agencyName="U-OV" agencyTimeZoneOffset="7200000" agencyUrl="http://www.u-ov.info" headsign="Utrecht CS Jaarbeurszijde" interlineWithPreviousLeg="false" mode="BUS" rentedBike="false" route="25" routeId="6688" routeLongName="Utrecht CS - Cartesiusweg" routeShortName="25" routeType="3" serviceDate="20141009" tripId="15479747" tripShortName="1052">
+						<startTime>2014-10-09T12:22:00+02:00</startTime>
+						<endTime>2014-10-09T12:35:00+02:00</endTime>
+						<departureDelay>0</departureDelay>
+						<arrivalDelay>0</arrivalDelay>
+						<realTime>false</realTime>
+						<distance>3463.110665793055</distance>
+						<pathway>false</pathway>
+						<from stopIndex="4" stopSequence="5">
+							<name>Utrecht, Schepenbuurt</name>
+							<stopId>
+								<agencyId>AQUALINER</agencyId>
+								<id>115612</id>
+							</stopId>
+							<stopCode>50007090</stopCode>
+							<lon>5.086057</lon>
+							<lat>52.098074</lat>
+							<arrival>2014-10-09T12:21:59+02:00</arrival>
+							<departure>2014-10-09T12:22:00+02:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [5.086057,52.098074]}</geometry>
+						</from>
+						<to stopIndex="13" stopSequence="14">
+							<name>Utrecht, Jaarbeursplein</name>
+							<stopId>
+								<agencyId>AQUALINER</agencyId>
+								<id>114472</id>
+							</stopId>
+							<stopCode>50006290</stopCode>
+							<lon>5.105309</lon>
+							<lat>52.088531</lat>
+							<arrival>2014-10-09T12:35:00+02:00</arrival>
+							<departure>2014-10-09T12:35:00+02:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [5.105309,52.088531]}</geometry>
+						</to>
+						<legGeometry>
+							<length>147</length>
+							<points>}k~|H{j`^B?hBXJ?B@|ARv@LzC\dALhALd@FF@JB\FdALd@@@?d@D@?VDL?D?HDRFDBbAr@`CvALJr@d@j@f@LJhDzBlAr@z@d@h@LpAPf@AvAGjBQpFi@TGv@Ej@K|JgA\M^[b@[HIj@g@?Ar@_AXYJQDGr@sA\cAp@kBHYHWVkAPwAJ}@@EVqA?AVw@Pm@Pe@Zq@HSPc@j@cAPYN[TU`@[TOREPJPCHAHKHKBMF_@AY@o@AwABYAUESKYEICAIAIIMGKIW[c@q@}@wC_@iAo@oB]y@c@eAGIqAyBYe@{FsIc@w@s@cAa@o@OSe@s@e@s@Ye@ACe@s@iAkBMO]c@e@a@m@_@o@a@GC{CwAq@YSKUSSWKMSc@?EQg@GQyBaJMq@Qs@?CKk@R[LMPW\e@Zc@\]ZY</points>
+						</legGeometry>
+						<steps/>
+						<duration>780.0</duration>
+					</leg>
+					<leg agencyTimeZoneOffset="7200000" interlineWithPreviousLeg="false" mode="WALK" rentedBike="false" route="">
+						<startTime>2014-10-09T12:35:00+02:00</startTime>
+						<endTime>2014-10-09T12:39:37+02:00</endTime>
+						<departureDelay>0</departureDelay>
+						<arrivalDelay>0</arrivalDelay>
+						<realTime>false</realTime>
+						<distance>381.90928698415155</distance>
+						<pathway>false</pathway>
+						<from stopIndex="13" stopSequence="14">
+							<name>Utrecht, Jaarbeursplein</name>
+							<stopId>
+								<agencyId>AQUALINER</agencyId>
+								<id>114472</id>
+							</stopId>
+							<stopCode>50006290</stopCode>
+							<lon>5.105309</lon>
+							<lat>52.088531</lat>
+							<arrival>2014-10-09T12:35:00+02:00</arrival>
+							<departure>2014-10-09T12:35:00+02:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [5.105309,52.088531]}</geometry>
+						</from>
+						<to stopIndex="4" stopSequence="50" zoneId="IFF:ut">
+							<name>Utrecht Centraal</name>
+							<stopId>
+								<agencyId>AQUALINER</agencyId>
+								<id>54891</id>
+							</stopId>
+							<platformCode>5a</platformCode>
+							<lon>5.10950624943</lon>
+							<lat>52.0907993995</lat>
+							<arrival>2014-10-09T12:39:37+02:00</arrival>
+							<departure>2014-10-09T12:40:00+02:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [5.10950624943,52.0907993995]}</geometry>
+						</to>
+						<legGeometry>
+							<length>2</length>
+							<points>ip||Hccd^cMgY</points>
+						</legGeometry>
+						<steps>
+							<walkSteps>
+								<distance>381.90928698415155</distance>
+								<relativeDirection>DEPART</relativeDirection>
+								<streetName>Utrecht, Jaarbeursplein =&gt; Utrecht Centraal</streetName>
+								<absoluteDirection>NORTHEAST</absoluteDirection>
+								<stayOn>false</stayOn>
+								<area>false</area>
+								<bogusName>false</bogusName>
+								<lon>5.105309</lon>
+								<lat>52.088531</lat>
+								<elevation/>
+							</walkSteps>
+						</steps>
+						<duration>277.0</duration>
+					</leg>
+					<leg agencyId="IFF:NS" agencyName="NS" agencyTimeZoneOffset="7200000" agencyUrl="http://www.ns.nl" headsign="Den Helder" interlineWithPreviousLeg="false" mode="RAIL" rentedBike="false" route="Intercity" routeId="2208" routeLongName="Den Helder &lt;-&gt; Nijmegen IC3000" routeShortName="Intercity" routeType="2" serviceDate="20141009" tripId="15843809" tripShortName="3038">
+						<startTime>2014-10-09T12:40:00+02:00</startTime>
+						<endTime>2014-10-09T14:26:00+02:00</endTime>
+						<departureDelay>0</departureDelay>
+						<arrivalDelay>0</arrivalDelay>
+						<realTime>false</realTime>
+						<distance>111998.75646359706</distance>
+						<pathway>false</pathway>
+						<from stopIndex="4" stopSequence="50" zoneId="IFF:ut">
+							<name>Utrecht Centraal</name>
+							<stopId>
+								<agencyId>AQUALINER</agencyId>
+								<id>54891</id>
+							</stopId>
+							<platformCode>5a</platformCode>
+							<lon>5.10950624943</lon>
+							<lat>52.0907993995</lat>
+							<arrival>2014-10-09T12:39:37+02:00</arrival>
+							<departure>2014-10-09T12:40:00+02:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [5.10950624943,52.0907993995]}</geometry>
+						</from>
+						<to stopIndex="16" stopSequence="170" zoneId="IFF:hdr">
+							<name>Den Helder</name>
+							<stopId>
+								<agencyId>AQUALINER</agencyId>
+								<id>54033</id>
+							</stopId>
+							<platformCode>3</platformCode>
+							<lon>4.76073056459</lon>
+							<lat>52.9566029739</lat>
+							<arrival>2014-10-09T14:26:00+02:00</arrival>
+							<departure>2014-10-09T14:26:00+02:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [4.76073056459,52.9566029739]}</geometry>
+						</to>
+						<legGeometry>
+							<length>532</length>
+							<points>w~||Hy}d^{HbIq@t@sCtDmBtBcHdJu@hAi@dAm@`Be@|A]xAW~As@rF[zAw@tCi@vAiCnFcFjJuHzMkG~LunB`aEwElJyMhW_f@rbAud@|~@eIxPgC|E}GlNwLdVip@buA}CjHmC~GuGlQwAhDkBhEmB~DgBbDcBpCsB|CmCvDsB`CkCvC}AzAqCdCkBzAcCfBeDnBuC|AkChAuCfAsDfAsCp@oCb@}BZ}Gn@_E`@qDToFNsF?eCE_G_@kGs@mCe@yOkDyKwBosCmg@}TmEcbDmk@}F}@aGi@mDOmCG}FF}DReFj@oF~@yElAkEzAyD~AqDjBsErCuDlCeElDqoAjhAwD|CwCzB_L`I{DvC_E`Dqr@pm@aGzE}LlJob@t]ch@jd@uXvUiFrEgtBbjBaHnFoDxCyCpCwJnJuK`KgFlFuM`OaDbDwDpDc~@xx@sB`B_D|BgDxB}BpA}HbEqBv@wGxAcA`@iG`DiIlEkNjJaAf@{@Vw@LoAFcACo@GeAWq@Wy@c@iAy@iAsAeA}AaA}By@kCgAaF{DuSkIia@g@gBm@aBu@aB{@}Ai@w@u@{@q@o@w@i@{@a@iAa@w@O}CS}A@}IXqA?}@G_B[{@YaMkGcEaBkAYm@IaACgBJuDr@}@\k@Zu@h@s@n@o@x@m@~@k@fAc@bAk@dB]xAgAzG[bBkE|Rc@zBUvAc@tDaBlS_Dd^UpDClDBfCZtIDfF?dBIbBWtDMjAQlAe@~Bo@fE_@jBs@lCyApEgBxGs@fDmCdKcAzDWhAeA~F}@jDiAzDsCvK{CvMa@~AmAlDoGfNgBbE_AvCeFdSaCtJm@~CuDnWYhCa@lE[zEQrEKtEQl_@PnoA?tIO|VEtOBl[BhRCjQ@xi@C~DG|EQzFSzDmAlQ[fE]jDs@`GUrAm@lDk@lCw@jDcAnDw@`CqAnDy@pByAxC{ApC{@rAwApByAnBcDdD{BlBmBtAgBdAmB|@kBr@wAb@wBd@eARcCVkAFkBDaBAgTm@aEByG]cD[sDc@aDi@wEaAqEoAqE}AgDwAmFkCwCcBiaAom@qDkByDyAgCq@cDm@uC[aDMkD@wCNsC^yGvA_F|@kG|A}ChAm`@dSeEdCwHzDaQpIsDvAiA\uI`C{AVqAN_BFg`DnGyCLiDh@kDx@wClAuAp@mAx@yB|AuAjAyB|B{BpCeBfCe@v@g@dAaCrFkAxCeBrFy@bDc@lBWvAmBjNcCpNkOfkAs@fGYzDcHd|A{Aj[WjD_@pDw@rF{@lE}@nDoA~DsBfF}bCtvFcMtYcCdF}[bu@ylBfmEaAlBu@rAcB`CmB~B}CtCyBxA{Az@_Bn@cBh@oAXkBZuAJ{AF_B?aBG}AQmASwBi@}Ak@_Bw@sAw@_BiAkB_BqhGsqF{CqCqHuHaCwBoHwFmEsDinEw|D}@aAm@{@o@eAi@iAu@sBkB{F]oAWoAKeAs@iLs@sLIcBEgCGgBgBg[SeGSiEc@gGc@aEw@mF}@mEkAwEwAmEyQki@udDwsJaNaa@u@qBcB}DmAmC}AuCcBsC}A_C_BwBgBqB}AaBuBmB_BmAuBwA}Ay@gCoAeBq@gCu@uBe@iCa@}AOas@uC{P{@{uAwFiCOiBMsB[uAWoCo@yC_A}LsEuDeAqBa@gBYoEa@qg@kBkDC{B@sCNyBXyCj@gD`AeFpBaj@bUyD`BkExB_IhEuHxEeFrD{LvJyCjCaDzCqDxDoD`EifBfuByB~BeBbBkDtCiBnAuDtBwB`AaBp@{Br@yA^cEt@uBVwCR}r@|C_EDcXjAeSz@uCXoXlAqKXyh@|Bad@rBoJl@ejBdImDJqDAoDU{Fy@gpEqu@sAScEaAuKiBgEs@cEe@eOqC}gAaRiDg@sBOaDIsDHgDZmDj@gD~@kC`A}CxAwCjBiDjCyCxCoC~CyChEmCtEsBhEqB|EaAnCw@dCu@nCw@xCw@lDy@dEo[|lBcAnFm@fCm@zBq@vBeApCkAlCo@pAeBtC}@pAgBzBcCbCoCtBuC|A}vCnmA{e@|R}@VcAT}@LmBF_BI{AUoXaHsBa@qBWqCU_FIoCLsCZch@|H</points>
+						</legGeometry>
+						<steps/>
+						<duration>6360.0</duration>
+					</leg>
+					<leg agencyTimeZoneOffset="7200000" interlineWithPreviousLeg="false" mode="WALK" rentedBike="false" route="">
+						<startTime>2014-10-09T14:26:00+02:00</startTime>
+						<endTime>2014-10-09T14:26:37+02:00</endTime>
+						<departureDelay>0</departureDelay>
+						<arrivalDelay>0</arrivalDelay>
+						<realTime>false</realTime>
+						<distance>47.82347792575697</distance>
+						<pathway>false</pathway>
+						<from stopIndex="16" stopSequence="170" zoneId="IFF:hdr">
+							<name>Den Helder</name>
+							<stopId>
+								<agencyId>AQUALINER</agencyId>
+								<id>54033</id>
+							</stopId>
+							<platformCode>3</platformCode>
+							<lon>4.76073056459</lon>
+							<lat>52.9566029739</lat>
+							<arrival>2014-10-09T14:26:00+02:00</arrival>
+							<departure>2014-10-09T14:26:00+02:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [4.76073056459,52.9566029739]}</geometry>
+						</from>
+						<to stopIndex="0" stopSequence="0" zoneId="CXX:34000020">
+							<name>Den Helder, Station</name>
+							<stopId>
+								<agencyId>AQUALINER</agencyId>
+								<id>42393</id>
+							</stopId>
+							<stopCode>34000020</stopCode>
+							<lon>4.761444</lon>
+							<lat>52.956619</lat>
+							<arrival>2014-10-09T14:26:37+02:00</arrival>
+							<departure>2014-10-09T15:12:00+02:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [4.761444,52.956619]}</geometry>
+						</to>
+						<legGeometry>
+							<length>2</length>
+							<points>wafbIqy`\AmC</points>
+						</legGeometry>
+						<steps>
+							<walkSteps>
+								<distance>47.82347792575697</distance>
+								<relativeDirection>DEPART</relativeDirection>
+								<streetName>Den Helder =&gt; Den Helder, Station</streetName>
+								<absoluteDirection>EAST</absoluteDirection>
+								<stayOn>false</stayOn>
+								<area>false</area>
+								<bogusName>false</bogusName>
+								<lon>4.76073056459</lon>
+								<lat>52.9566029739</lat>
+								<elevation/>
+							</walkSteps>
+						</steps>
+						<duration>37.0</duration>
+					</leg>
+					<leg agencyId="CXX" agencyName="Connexxion" agencyTimeZoneOffset="7200000" agencyUrl="http://www.connexxion.nl" headsign="Den Helder Steiger TESO" interlineWithPreviousLeg="false" mode="BUS" rentedBike="false" route="33" routeId="1757" routeLongName="Den Helder Station - Veerhaven" routeShortName="33" routeType="3" serviceDate="20141009" tripId="10454949" tripShortName="19">
+						<startTime>2014-10-09T15:12:00+02:00</startTime>
+						<endTime>2014-10-09T15:22:00+02:00</endTime>
+						<departureDelay>0</departureDelay>
+						<arrivalDelay>0</arrivalDelay>
+						<realTime>false</realTime>
+						<distance>1711.469704995687</distance>
+						<pathway>false</pathway>
+						<from stopIndex="0" stopSequence="0" zoneId="CXX:34000020">
+							<name>Den Helder, Station</name>
+							<stopId>
+								<agencyId>AQUALINER</agencyId>
+								<id>42393</id>
+							</stopId>
+							<stopCode>34000020</stopCode>
+							<lon>4.761444</lon>
+							<lat>52.956619</lat>
+							<arrival>2014-10-09T14:26:37+02:00</arrival>
+							<departure>2014-10-09T15:12:00+02:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [4.761444,52.956619]}</geometry>
+						</from>
+						<to stopIndex="3" stopSequence="3" zoneId="CXX:34002090">
+							<name>Den Helder, Steiger TESO-boot</name>
+							<stopId>
+								<agencyId>AQUALINER</agencyId>
+								<id>35221</id>
+							</stopId>
+							<stopCode>34002090</stopCode>
+							<lon>4.777436</lon>
+							<lat>52.962246</lat>
+							<arrival>2014-10-09T15:22:00+02:00</arrival>
+							<departure>2014-10-09T15:22:00+02:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [4.777436,52.962246]}</geometry>
+						</to>
+						<legGeometry>
+							<length>74</length>
+							<points>{afbI_~`\a@JSDYD[NE@EFE@A@CDEDQZCj@A\BbAXfBJt@Bb@?`A?x@CJEDYIyEs@UGcAOaBW{AWGKIOMg@M[u@sCISOES?c@DuFf@k@H_ATw@TK@_@HK@k@qF[cDm@mG_@sDYeCKqAIyBm@iEOsACkADgBVgRAqAFqFEcL@i@Li@N_@nAyCNWRSPCP?NFlBtBBq@JW~@gDBOJK</points>
+						</legGeometry>
+						<steps/>
+						<duration>600.0</duration>
+					</leg>
+					<leg agencyTimeZoneOffset="7200000" interlineWithPreviousLeg="false" mode="WALK" rentedBike="false" route="">
+						<startTime>2014-10-09T15:22:00+02:00</startTime>
+						<endTime>2014-10-09T15:23:04+02:00</endTime>
+						<departureDelay>0</departureDelay>
+						<arrivalDelay>0</arrivalDelay>
+						<realTime>false</realTime>
+						<distance>85.24228315308459</distance>
+						<pathway>false</pathway>
+						<from stopIndex="3" stopSequence="3" zoneId="CXX:34002090">
+							<name>Den Helder, Steiger TESO-boot</name>
+							<stopId>
+								<agencyId>AQUALINER</agencyId>
+								<id>35221</id>
+							</stopId>
+							<stopCode>34002090</stopCode>
+							<lon>4.777436</lon>
+							<lat>52.962246</lat>
+							<arrival>2014-10-09T15:22:00+02:00</arrival>
+							<departure>2014-10-09T15:22:00+02:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [4.777436,52.962246]}</geometry>
+						</from>
+						<to stopIndex="0" stopSequence="1">
+							<name>Den Helder</name>
+							<stopId>
+								<agencyId>AQUALINER</agencyId>
+								<id>145093</id>
+							</stopId>
+							<lon>4.7781</lon>
+							<lat>52.9629</lat>
+							<arrival>2014-10-09T15:23:04+02:00</arrival>
+							<departure>2014-10-09T15:30:00+02:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [4.7781,52.9629]}</geometry>
+						</to>
+						<legGeometry>
+							<length>2</length>
+							<points>_egbI}ad\cCeC</points>
+						</legGeometry>
+						<steps>
+							<walkSteps>
+								<distance>85.24228315308459</distance>
+								<relativeDirection>DEPART</relativeDirection>
+								<streetName>Den Helder, Steiger TESO-boot =&gt; Den Helder</streetName>
+								<absoluteDirection>NORTHEAST</absoluteDirection>
+								<stayOn>false</stayOn>
+								<area>false</area>
+								<bogusName>false</bogusName>
+								<lon>4.777436</lon>
+								<lat>52.962246</lat>
+								<elevation/>
+							</walkSteps>
+						</steps>
+						<duration>64.0</duration>
+					</leg>
+					<leg agencyId="TESO" agencyName="TESO" agencyTimeZoneOffset="7200000" agencyUrl="http://www.teso.nl/" headsign="Den Helder - Texel" interlineWithPreviousLeg="false" mode="FERRY" rentedBike="false" route="Texel" routeId="8177" routeLongName="Den Helder - Texel" routeShortName="Texel" routeType="4" serviceDate="20141009" tripId="8929942" tripShortName="15:30">
+						<startTime>2014-10-09T15:30:00+02:00</startTime>
+						<endTime>2014-10-09T15:50:00+02:00</endTime>
+						<departureDelay>0</departureDelay>
+						<arrivalDelay>0</arrivalDelay>
+						<realTime>false</realTime>
+						<distance>4530.707968346106</distance>
+						<pathway>false</pathway>
+						<from stopIndex="0" stopSequence="1">
+							<name>Den Helder</name>
+							<stopId>
+								<agencyId>AQUALINER</agencyId>
+								<id>145093</id>
+							</stopId>
+							<lon>4.7781</lon>
+							<lat>52.9629</lat>
+							<arrival>2014-10-09T15:23:04+02:00</arrival>
+							<departure>2014-10-09T15:30:00+02:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [4.7781,52.9629]}</geometry>
+						</from>
+						<to stopIndex="1" stopSequence="2">
+							<name>Texel</name>
+							<stopId>
+								<agencyId>AQUALINER</agencyId>
+								<id>145094</id>
+							</stopId>
+							<lon>4.7813</lon>
+							<lat>53.0036</lat>
+							<arrival>2014-10-09T15:50:00+02:00</arrival>
+							<departure>2014-10-09T15:50:00+02:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [4.7813,53.0036]}</geometry>
+						</to>
+						<legGeometry>
+							<length>8</length>
+							<points>cigbIcfd\oKcL{JsDknA{OogAy@kz@i@sIzEcGzJ</points>
+						</legGeometry>
+						<steps/>
+						<duration>1200.0</duration>
+					</leg>
+					<leg agencyTimeZoneOffset="7200000" interlineWithPreviousLeg="false" mode="WALK" rentedBike="false" route="">
+						<startTime>2014-10-09T15:50:00+02:00</startTime>
+						<endTime>2014-10-09T15:51:14+02:00</endTime>
+						<departureDelay>0</departureDelay>
+						<arrivalDelay>0</arrivalDelay>
+						<realTime>false</realTime>
+						<distance>99.66522566659951</distance>
+						<pathway>false</pathway>
+						<from stopIndex="1" stopSequence="2">
+							<name>Texel</name>
+							<stopId>
+								<agencyId>AQUALINER</agencyId>
+								<id>145094</id>
+							</stopId>
+							<lon>4.7813</lon>
+							<lat>53.0036</lat>
+							<arrival>2014-10-09T15:50:00+02:00</arrival>
+							<departure>2014-10-09T15:50:00+02:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [4.7813,53.0036]}</geometry>
+						</from>
+						<to stopIndex="0" stopSequence="0" zoneId="CXX:34130010">
+							<name>'t Horntje, Veerhaven</name>
+							<stopId>
+								<agencyId>AQUALINER</agencyId>
+								<id>43469</id>
+							</stopId>
+							<stopCode>34130010</stopCode>
+							<lon>4.780808</lon>
+							<lat>53.004446</lat>
+							<arrival>2014-10-09T15:51:14+02:00</arrival>
+							<departure>2014-10-09T15:55:00+02:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [4.780808,53.004446]}</geometry>
+						</to>
+						<legGeometry>
+							<length>2</length>
+							<points>ogobIczd\gDbB</points>
+						</legGeometry>
+						<steps>
+							<walkSteps>
+								<distance>99.66522566659951</distance>
+								<relativeDirection>DEPART</relativeDirection>
+								<streetName>Texel =&gt; 't Horntje, Veerhaven</streetName>
+								<absoluteDirection>NORTH</absoluteDirection>
+								<stayOn>false</stayOn>
+								<area>false</area>
+								<bogusName>false</bogusName>
+								<lon>4.7813</lon>
+								<lat>53.0036</lat>
+								<elevation/>
+							</walkSteps>
+						</steps>
+						<duration>74.0</duration>
+					</leg>
+					<leg agencyId="CXX" agencyName="Connexxion" agencyTimeZoneOffset="7200000" agencyUrl="http://www.connexxion.nl" headsign="De Koog Nikadel" interlineWithPreviousLeg="false" mode="BUS" rentedBike="false" route="28" routeId="1527" routeLongName="Texel Veerhaven - Den Burg - De Koog" routeShortName="28" routeType="3" serviceDate="20141009" tripId="10377330" tripShortName="21">
+						<startTime>2014-10-09T15:55:00+02:00</startTime>
+						<endTime>2014-10-09T16:20:00+02:00</endTime>
+						<departureDelay>0</departureDelay>
+						<arrivalDelay>0</arrivalDelay>
+						<realTime>false</realTime>
+						<distance>13800.322125922927</distance>
+						<pathway>false</pathway>
+						<from stopIndex="0" stopSequence="0" zoneId="CXX:34130010">
+							<name>'t Horntje, Veerhaven</name>
+							<stopId>
+								<agencyId>AQUALINER</agencyId>
+								<id>43469</id>
+							</stopId>
+							<stopCode>34130010</stopCode>
+							<lon>4.780808</lon>
+							<lat>53.004446</lat>
+							<arrival>2014-10-09T15:51:14+02:00</arrival>
+							<departure>2014-10-09T15:55:00+02:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [4.780808,53.004446]}</geometry>
+						</from>
+						<to stopIndex="25" stopSequence="26" zoneId="CXX:34440090">
+							<name>De Koog, Nikadel</name>
+							<stopId>
+								<agencyId>AQUALINER</agencyId>
+								<id>37677</id>
+							</stopId>
+							<stopCode>34440090</stopCode>
+							<lon>4.764915</lon>
+							<lat>53.099079</lat>
+							<arrival>2014-10-09T16:20:00+02:00</arrival>
+							<departure>2014-10-09T16:20:01+02:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [4.764915,53.099079]}</geometry>
+						</to>
+						<legGeometry>
+							<length>434</length>
+							<points>ylobIawd\_BvBIb@DEo@Au@xAm@z@kCjBKFcD~B{@JoAOE?E@ADOHKPGZ?T?HBd@MDy@Hu@Aw@G{@Q{@]y@c@cA}@eAiA}HsJe@[}DeF}CwEkCaEeNaRQSeJiM}HsKcB}B_@m@CSwF}HkAcBKc@]Ma@WeEaGuR_XgFwHkA{AmEaGU[U[gAwAiB_BkByAgBgA_By@cBk@iB[{BUoBMcCJoBVuCv@yAf@aAh@IDkAx@i@G_A|AgBdBuAdBgMhQu@jBcCdDw@nAYb@s@jAuEfI_E|HeD|F[Vg@ZaAr@}AfA?ACGCACCE?C@C@?AOg@IWGKkFgFuBkCoDuCM[K[A[AWg@GO?W?][g@i@wAgAQMUMk@Sg@A@d@AN^@Va@JN@@LJCJLQDEDCPLvAfAf@h@\ZV?N?f@F?SD_A?kAAs@G{@qBgPSmCAs@?_@?WAo@Am@AMAMAIAGGIGWCGS]YWy@s@w@m@@I@E?KAC?CCEACCEEAE?A@EDA?EHq@o@KWs@g@eA}@WQQKYG]?s@NE?OJOBK@a@Te@VO?GPWZOPi@r@uBhC_AlAa@f@wAjBiA~@Mh@qAdBwAlBW^GHEFSb@EPOh@Ir@CVA?A?A?C?A@ABA@AB?@?D?D?B?@@F?@@@@B@?WvAo@pEe@`B@~@s@jF[pBEd@Ah@@f@DX^`Ab@dAdAjCb@~@?BCF?N?J@DBDBDB@D?DABE`@`BtAbCVn@N^JVLRDJFBLHN?D?NEXKh@WzBiAr@Kp@q@`GyCTtBHx@@rBXRZrD@FD\D^DZTpAj@`DwCpCo@h@qB|Aq@RuEbE{@p@IFg@b@y@p@SDy@v@AGGEEEGAECIBE@GDEFA?CJCFCLALAH?LBL@DWb@SZK^qCbFiSf[]b@o@|@UX]`@u@n@SHQ@a@T[PQHCEGIEAA?E?CBEBABADCJ?DABmANBTUVuBdAaKdEYB_HtCqANmC|AUPUJQDm@Pq@H}BZyAEkKtAe@?iCEaCj@qCRaAB]Jy@GuAG_NmAWIoBk@iC@uD][FaQ{A_Fc@q@AaA?oAH{ALgAPm@Cc@b@wAd@c@Pu@Z_Ab@eAn@kA`AQ@yBjBgBvAFPY\g@p@q@`AMPORYl@Wb@EVQV}DdGYfAeHnMm@dAg@`Ai@`A_@v@KNWf@W\SPeAl@SEMTiAb@Q_CC]GSGIEIKCGEIAO@m@NI?EAGEmAgBGEEKAWAEEUCCAEEEKAm@J]B_@A</points>
+						</legGeometry>
+						<steps/>
+						<duration>1500.0</duration>
+					</leg>
+					<leg agencyTimeZoneOffset="7200000" interlineWithPreviousLeg="false" mode="WALK" rentedBike="false" route="">
+						<startTime>2014-10-09T16:20:01+02:00</startTime>
+						<endTime>2014-10-09T16:22:46+02:00</endTime>
+						<departureDelay>0</departureDelay>
+						<arrivalDelay>0</arrivalDelay>
+						<realTime>false</realTime>
+						<distance>213.2730297784932</distance>
+						<pathway>false</pathway>
+						<from stopIndex="25" stopSequence="26" zoneId="CXX:34440090">
+							<name>De Koog, Nikadel</name>
+							<stopId>
+								<agencyId>AQUALINER</agencyId>
+								<id>37677</id>
+							</stopId>
+							<stopCode>34440090</stopCode>
+							<lon>4.764915</lon>
+							<lat>53.099079</lat>
+							<arrival>2014-10-09T16:20:00+02:00</arrival>
+							<departure>2014-10-09T16:20:01+02:00</departure>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [4.764915,53.099079]}</geometry>
+						</from>
+						<to orig="">
+							<name>Badweg</name>
+							<lon>4.762414416904899</lon>
+							<lat>53.099970942687335</lat>
+							<arrival>2014-10-09T16:22:46+02:00</arrival>
+							<geometry>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [4.762414416904899,53.099970942687335]}</geometry>
+						</to>
+						<legGeometry>
+							<length>17</length>
+							<points>y{acIisa\MNIPCLITKlAAFERIPGNi@FKFSTUnCE^Ij@CR</points>
+						</legGeometry>
+						<steps>
+							<walkSteps>
+								<distance>190.55080488038098</distance>
+								<relativeDirection>DEPART</relativeDirection>
+								<streetName>Nikadel</streetName>
+								<absoluteDirection>NORTHWEST</absoluteDirection>
+								<stayOn>false</stayOn>
+								<area>false</area>
+								<bogusName>false</bogusName>
+								<lon>4.7648583</lon>
+								<lat>53.099018400000006</lat>
+								<elevation/>
+							</walkSteps>
+							<walkSteps>
+								<distance>22.722224898112223</distance>
+								<relativeDirection>CONTINUE</relativeDirection>
+								<streetName>Badweg</streetName>
+								<absoluteDirection>WEST</absoluteDirection>
+								<stayOn>false</stayOn>
+								<area>false</area>
+								<bogusName>false</bogusName>
+								<lon>4.7627363</lon>
+								<lat>53.0999033</lat>
+								<elevation/>
+							</walkSteps>
+						</steps>
+						<duration>165.0</duration>
+					</leg>
+				</legs>
+				<tooSloped>false</tooSloped>
+			</itinerary>
+		</itineraries>
+	</plan>
+</response>

@@ -1,0 +1,28 @@
+[
+{
+  "OTPTimedout": null, 
+  "OTPTotalComputationTime": null, 
+  "arrivalTime": "2014-09-25T13:26:35", 
+  "departureTime": "2014-09-25T12:10:07", 
+  "duration": 76.46666666666667, 
+  "id": 1, 
+  "isError": false, 
+  "legs": [
+    {
+      "arrivalTime": "2014-09-25T12:29:59", 
+      "departureTime": "2014-09-25T12:10:07", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-09-25T13:26:00", 
+      "departureTime": "2014-09-25T12:30:00", 
+      "line": "Sprinter (Uitgeest)"
+    }, 
+    {
+      "arrivalTime": "2014-09-25T13:26:35", 
+      "departureTime": "2014-09-25T13:26:01", 
+      "line": "walk"
+    }
+  ], 
+  "transfers": 0
+},

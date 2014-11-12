@@ -1,0 +1,133 @@
+[
+{
+  "OTPTimedout": null, 
+  "OTPTotalComputationTime": null, 
+  "arrivalTime": "2014-10-08T13:26:35", 
+  "departureTime": "2014-10-08T12:05:58", 
+  "duration": 80, 
+  "id": 1, 
+  "isError": false, 
+  "legs": [
+    {
+      "arrivalTime": "2014-10-08T12:24:59", 
+      "departureTime": "2014-10-08T12:05:58", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-08T13:26:00", 
+      "departureTime": "2014-10-08T12:25:00", 
+      "line": "Sprinter (Uitgeest)"
+    }, 
+    {
+      "arrivalTime": "2014-10-08T13:26:35", 
+      "departureTime": "2014-10-08T13:26:01", 
+      "line": "walk"
+    }
+  ], 
+  "transfers": 0
+},
+{
+  "OTPTimedout": null, 
+  "OTPTotalComputationTime": null, 
+  "error": null, 
+  "id": 2, 
+  "isError": true
+},
+{
+  "OTPTimedout": null, 
+  "OTPTotalComputationTime": null, 
+  "arrivalTime": "2014-10-08T13:46:37", 
+  "departureTime": "2014-10-08T12:09:02", 
+  "duration": 97, 
+  "id": 3, 
+  "isError": false, 
+  "legs": [
+    {
+      "arrivalTime": "2014-10-08T12:31:59", 
+      "departureTime": "2014-10-08T12:09:02", 
+      "line": "walk"
+    }, 
+    {
+      "arrivalTime": "2014-10-08T13:38:00", 
+      "departureTime": "2014-10-08T12:32:00", 
+      "line": "400 (Utrecht CS Busstation West)"
+    }, 
+    {
+      "arrivalTime": "2014-10-08T13:46:37", 
+      "departureTime": "2014-10-08T13:38:01", 
+      "line": "walk"
+    }
+  ], 
+  "transfers": 0
+},
+{
+  "OTPTimedout": null, 
+  "OTPTotalComputationTime": null, 
+  "error": null, 
+  "id": 4, 
+  "isError": true
+},
+{
+  "OTPTimedout": null, 
+  "OTPTotalComputationTime": null, 
+  "error": null, 
+  "id": 5, 
+  "isError": true
+},
+{
+  "OTPTimedout": null, 
+  "OTPTotalComputationTime": null, 
+  "error": null, 
+  "id": 6, 
+  "isError": true
+},
+{
+  "OTPTimedout": null, 
+  "OTPTotalComputationTime": null, 
+  "error": null, 
+  "id": 7, 
+  "isError": true
+},
+{
+  "OTPTimedout": null, 
+  "OTPTotalComputationTime": null, 
+  "error": null, 
+  "id": 8, 
+  "isError": true
+},
+{
+  "OTPTimedout": null, 
+  "OTPTotalComputationTime": null, 
+  "error": null, 
+  "id": 9, 
+  "isError": true
+},
+{
+  "OTPTimedout": null, 
+  "OTPTotalComputationTime": null, 
+  "error": null, 
+  "id": 10, 
+  "isError": true
+},
+{
+  "OTPTimedout": null, 
+  "OTPTotalComputationTime": null, 
+  "error": null, 
+  "id": 11, 
+  "isError": true
+},
+{
+  "OTPTimedout": null, 
+  "OTPTotalComputationTime": null, 
+  "error": null, 
+  "id": 12, 
+  "isError": true
+},
+{
+  "OTPTimedout": null, 
+  "OTPTotalComputationTime": null, 
+  "error": null, 
+  "id": 13, 
+  "isError": true
+}
+]

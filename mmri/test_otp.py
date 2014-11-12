@@ -86,6 +86,11 @@ def before_all_tests(tests, options):
 def after_all_tests(tests, options):
     VALIDATION['endTime'] = int(round(time.time() * 1000))
     VALIDATION['totalTestDuration'] = (VALIDATION['endTime'] - VALIDATION['startTime'])
+    # TODO: Improve actual test duration calculation?
+    # VALIDATION['totalTestDurationAbsolute'] = 0
+    # for key, val in VALIDATION.items():
+    #     if 'testDuration' in val:
+    #         VALIDATION['totalTestDurationAbsolute'] += val['testDuration']
     
     logger.info('AFTERALLTESTS %s: %s' % (options.url, VALIDATION['totalTestDuration']),
         extra={'gelfProps':{ 
@@ -159,7 +164,7 @@ def build_url(test, options):
         'arriveBy': (test['timeType'] == 'A'),
         'maxWalkDistance': 5000,
         'optimize': 'QUICK',
-        'mode': 'WALK,TRANSIT',
+        'mode': (test.get('mode') if test.get('mode') else 'WALK,TRANSIT'),
         'walkSpeed': 1.389,
         'numItineraries': 1,
     }
