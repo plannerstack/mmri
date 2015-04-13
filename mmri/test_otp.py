@@ -9,6 +9,7 @@ import json
 import logging
 import requests
 import sys
+import socket
 
 # DEFAULTS
 DEFAULT_URL = 'http://localhost:8080/opentripplanner-api-webapp/ws/plan'
@@ -29,7 +30,7 @@ if (GELFHOST and GELFPORT):
         # $ pip install gelfHandler
         # From: https://github.com/stewrutledge/gelfHandler/
         from gelfHandler import gelfHandler
-        gHandler = gelfHandler(host=GELFHOST,port=GELFPORT,proto='UDP')
+        gHandler = gelfHandler(host=GELFHOST,port=GELFPORT,proto='UDP',fromHost=socket.gethostname())
         logger.addHandler(gHandler)
     except ImportError:
         logger.warn("GelfHandler not importer, not logging to Gelf server")
