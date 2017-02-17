@@ -10,6 +10,7 @@ import logging
 import requests
 import sys
 import socket
+from collections import defaultdict
 
 # DEFAULTS
 DEFAULT_URL = 'http://localhost:8080/opentripplanner-api-webapp/ws/plan'
@@ -22,8 +23,8 @@ VALIDATION = {}
 logger = logging.getLogger('test-otp')
 
 # CONFIG FOR GRAYLOG2
-GELFHOST = None #'54.89.119.236'
-GELFPORT = None # 49154
+GELFHOST = ''
+GELFPORT = 0
 
 if (GELFHOST and GELFPORT):
     try:
@@ -196,10 +197,12 @@ def parse_itinerary(test, result):
 
 
 def parse_leg(leg):
+    d = defaultdict(lambda: 'UNKNOWN')
+    d.update(leg)
     if leg['mode'] == 'WALK':
         line = 'walk'
     else:
-        line = '%(route)s (%(headsign)s)' % leg
+        line = '%(route)s' % leg
     return {
         'departureTime': jsonDateTime(leg['startTime']),
         'arrivalTime': jsonDateTime(leg['endTime']),
